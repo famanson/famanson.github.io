@@ -177,7 +177,14 @@ body {
     width: 100px
   }
 }
-
+@media screen and (max-width: 517px) {
+  .roll-header-text h1 {
+    font-size: 30px;
+  }
+  .roll-header-text h4 {
+    font-size: 14px;
+  }  
+}
 @media (max-width: 991px) {
   .roll-icon {
     display:none;
@@ -200,12 +207,4 @@ body {
     margin-top:10px;
   }
 
-}
-@media (max-width: 515px) {
-  .roll-header-text h1 {
-    font-size: 30px;
-  }
-  .roll-header-text h4 {
-    font-size: 14px;
-  }  
 }
