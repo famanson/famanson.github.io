@@ -78,6 +78,7 @@ body {
 }
 
 .roll-header .roll-icon img {
+  float:right;
   max-width:100%;
 }
 
