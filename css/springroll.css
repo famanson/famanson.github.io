@@ -98,6 +98,10 @@ body {
   bottom: 200px;  //height of the footer
 }
 
+.social-image {
+  max-width: 50%
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -137,6 +141,26 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+  
+
+}
+@media (max-width: 1440px) {
+  .rollHeader {
+    padding: 10px 0 10px 0;
+  }
+
+  .social-image a {
+	max-width: 40%;
+	margin-right: 0;
+  }
+  .rollHeader img {
+    max-width: 100%
+  }
 }
 
+@media (max-width: 1024px) {
+  .social-image {
+    width: 100px
+  }
 
+}
