@@ -58,19 +58,19 @@ body {
 }
 
 .roll-header {
-        position: fixed;
-        z-index: 100000;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color:#eee;
-        padding: 20px 0 20px 0;
-        background-color: #000;
-        color: #fff;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#eee;
+    padding: 20px 0 20px 0;
+    background-color: #000;
+    color: #fff;
 }
 
 .roll-header h1 {
-        font-size: 60px;
+    font-size: 60px;
 }
 
 .roll-header .roll-icon {
@@ -108,14 +108,16 @@ body {
     border-left-width:2px;
     border-left-color:#000;
 }
-
+.footer .back-to-top a {
+    color:#999;
+}
 
 .bs-sidebar .nav > .active a {
     color:#000;
 }
 
 .bs-sidebar {
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 .bs-sidebar ul {
@@ -177,8 +179,6 @@ body {
     .featurette-heading {
         font-size: 50px;
     }
-    
-
 }
 @media (max-width: 1440px) {
     .roll-header {
@@ -220,7 +220,7 @@ body {
     .footer {
         margin-top: 50px
     }
-    
+
     .roll-header {
         position: relative;
         padding-bottom: 50px;

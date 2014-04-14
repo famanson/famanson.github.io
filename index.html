@@ -1,4 +1,4 @@
-
+<!-- This website was built with Bootstrap (http://getbootstrap.com/) and hosted on GitHub Pages (https://pages.github.com/) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="col-md-7">
-            
+
             <div class="roll-header-text">
             <h1>Team Spring Roll</h1>
             <h4><i>"...cha gio, the Vietnamese interpretation of spring roll, is what spring roll should be. " - rasamalaysia.com</i></h4>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container springroll"">
 
         <div class="col-md-9">
@@ -90,7 +90,7 @@
                     <p class="lead"><i>... want to make a difference for the better of our Vietnamese community in the UK</i></p>
                     <p class="lead"><i>... don't mind taking new challenges head-on</i></p>
                     <p class="lead"><i>... are willing to learn and adapt to new, trending technologies</i></p>
-                    
+
                     <p class="lead">then we really need to talk!</p>
                 </div>
             </div>
@@ -154,7 +154,7 @@
 
             <hr class="featurette-divider">
             <a class="anchor" id="contact-us"></a>
-            
+
             <div class="row featurette">
                 <h2 class="featurette-heading"><span class="text-muted">Contact Us</span></h2>
                 <p class="lead"><i>"Okay, I have seen enough of this cr*p. I want to work on this thing, like, now. Who should I talk to?"</i></p>
@@ -165,8 +165,8 @@
             <hr class="featurette-divider">
 
             <div class="row featurette footer">
-                <p class="pull-right"><a href="#intro">Back to top</a></p>
-                <p><i>famanson 2014</i></p>
+                <p class="back-to-top pull-right"><a href="#intro">Back to top</a></p>
+                <p><i>2014 Team Spring Roll</i></p>
             </div>
             <!-- /END THE FEATURETTES -->
         </div>
@@ -193,26 +193,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script>
-        $('body').scrollspy({ target: '#sidebar', offset:200 });
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-				|| location.hostname == this.hostname) {
-
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-				    var targetOffset = -20;
-				    if (this.hash !== '#intro') {
-					    targetOffset = target.offset().top+60;
-					}
-				    $('html,body').animate({
-					    scrollTop: targetOffset
-					}, 1000);
-					return false;
-				}
-			}
-		});
-    </script>
+    <script src="./js/springroll.min.js"></script>
   </body>
 </html>
