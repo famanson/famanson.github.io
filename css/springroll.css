@@ -140,6 +140,11 @@ body {
     max-width: 50%
 }
 
+.social-image a {
+    float:left;
+    margin-right: 10px
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -187,7 +192,6 @@ body {
 
     .social-image a {
         max-width: 40%;
-        margin-right: 0;
     }
     .roll-header img {
         max-width: 100%
