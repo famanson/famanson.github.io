@@ -165,7 +165,7 @@
             <hr class="featurette-divider">
 
             <div class="row featurette footer">
-                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p class="pull-right"><a href="#intro">Back to top</a></p>
                 <p><i>famanson 2014</i></p>
             </div>
             <!-- /END THE FEATURETTES -->
@@ -201,9 +201,13 @@
 
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				   if (target.length) {
-					 $('html,body').animate({
-						 scrollTop: target.offset().top+60
+				if (target.length) {
+				    var targetOffset = -20;
+				    if (this.hash !== '#intro') {
+					    targetOffset = target.offset().top+60;
+					}
+				    $('html,body').animate({
+					    scrollTop: targetOffset
 					}, 1000);
 					return false;
 				}
