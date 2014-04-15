@@ -108,6 +108,30 @@ body {
     border-left-width:2px;
     border-left-color:#000;
 }
+
+.back-to-top {
+    margin-top:100%;
+}
+.bs-sidebar .nav>li.back-to-top>a:hover, .bs-sidebar .nav>li.back-to-top>a:focus {
+    background-color:transparent;
+    border-left-style:hidden;
+    color:#000;
+}
+
+.footer {
+    background-color:#000;
+    position:absolute;
+    padding:50px;
+    color:#fff;
+    width:100%;
+    margin-top:80px;
+}
+
+.footer .back-to-top {
+    margin-top:0;
+    display:none;
+}
+
 .footer .back-to-top a {
     color:#999;
 }
@@ -222,9 +246,13 @@ body {
         margin-top: 20px
     }
     .footer {
-        margin-top: 50px
+        margin-top: 50px;
+        padding:10px;
     }
-
+    .footer .back-to-top {
+        margin-top:0;
+        display:block;
+    }
     .roll-header {
         position: relative;
         padding-bottom: 50px;
