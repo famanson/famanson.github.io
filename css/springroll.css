@@ -237,6 +237,10 @@ body {
     .roll-header-text h4 {
         font-size: 12px;
     }
+    h2:not(.featurette-heading) {
+        font-size: 24px;
+    }
+
 }
 @media (max-width: 991px) {
     .roll-icon {
