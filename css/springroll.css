@@ -32,12 +32,10 @@ body {
 
 .springroll .col-lg-4 {
     margin-bottom: 20px;
-    text-align: center;
 }
 .springroll h2 {
     font-weight: normal;
     margin-bottom: 20px;
-    text-align: center;
 }
 .springroll .col-lg-4 p {
     margin-right: 10px;
@@ -125,6 +123,10 @@ body {
     color:#fff;
     width:100%;
     margin-top:80px;
+}
+
+.footer p {
+    text-align:center;
 }
 
 .footer .back-to-top {
