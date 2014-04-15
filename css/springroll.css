@@ -42,11 +42,14 @@ body {
     margin-left: 10px;
 }
 
+.springroll .lead{
+   font-size: 16px;
+}
 
 .anchor{display: block; position: relative; top: -250px; visibility: hidden;}
 
 .featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 30px 0; /* Space out the Bootstrap <hr> more */
 }
 
 .featurette-heading {
@@ -56,19 +59,17 @@ body {
 }
 
 .roll-header {
-    position: fixed;
-    z-index: 100000;
-    top: 0;
-    left: 0;
+    position:absolute;
+	top:0;
+	left:0;
     width: 100%;
-    background-color:#eee;
+    background-color:#000;
     padding: 20px 0 20px 0;
-    background-color: #000;
     color: #fff;
 }
 
 .roll-header h1 {
-    font-size: 60px;
+    font-size: 56px;
 }
 
 .roll-header .roll-icon {
@@ -208,7 +209,7 @@ body {
     }
 
     .featurette-heading {
-        font-size: 50px;
+        font-size: 36px;
     }
 }
 @media (max-width: 1440px) {
@@ -231,10 +232,10 @@ body {
 }
 @media screen and (max-width: 517px) {
     .roll-header-text h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .roll-header-text h4 {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media (max-width: 991px) {
@@ -256,7 +257,7 @@ body {
         display:block;
     }
     .roll-header {
-        position: relative;
+	    position: relative;
         padding-bottom: 50px;
     }
     .springroll {
