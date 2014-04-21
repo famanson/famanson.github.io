@@ -1,6 +1,9 @@
 ---
 layout: post
 title: print("Hello World")
+year: 2014
+month: April
+day: 21
 ---
 
 Today is the day Hai and I publicly announce the creation of [Team Spring Roll](https://famanson.github.io/spring-roll) and our first project, [Project Spring Roll](https://www.indiegogo.com/projects/project-spring-roll) after a full month of preparation in stealth.

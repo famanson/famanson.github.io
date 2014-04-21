@@ -3,8 +3,24 @@ layout: page
 title: Archive
 ---
 
-## 2014
+{% capture current-year %}{{ site.time | date: '%Y' }}{% endcapture %}
 
-### April
+{% assign post_list = site.posts %}
 
-* [print("Hello World")](../2014/04/21/hello-world/)
+{% for node in post_list %}
+
+{% if prev-year == null or prev-year != node.year %}
+{% if prev-year != null and prev-year != node.year %}
+------
+{% endif %}
+## **{{ node.year }}**
+{% assign prev-month = null %}
+{% endif %}
+{% assign prev-year = node.year %}
+
+{% if prev-month == null or prev-month != node.month %}
+### {{ node.month }}
+{% endif %}
+{% assign prev-month = node.month %}
+* [{{ node.title }}]({{ node.url }})
+{% endfor %}

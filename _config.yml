@@ -6,10 +6,10 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Son's Corner
-tagline:          '/* a Team Spring Roll dev journal and commentaries */'
-description:      ''
-url:              http://famanson.github.io/dev-journal
+title:            "sudo fry rolls"
+tagline:          "/* Son Pham's Team Spring Roll dev journal */"
+description:      "Son Pham's journal and commentaries about Team Spring Roll's challenges and the fun we have solving them"
+url:              http://famanson.github.io
 
 author:
   name:           'Son Pham'
