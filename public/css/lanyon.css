@@ -532,15 +532,18 @@ a.pagination-item:hover {
   margin-bottom: 10px;
 }
 .social div {
-  width: 120px;
   float: left;
   margin-bottom: 10px;
 }
 
 .social div.tweet {
   margin-top: 2px;
-  margin-left: 15px;
 }
+
+.social div.tweet iframe {
+  width: 90px !important;
+}
+
 
 .twitter-share-button[style] { vertical-align: text-bottom !important; }
 
