@@ -528,6 +528,18 @@ a.pagination-item:hover {
 }
 
 /* Customisation */
-.social div {
-  float: left;
+.social {
+  margin-bottom: 10px;
 }
+.social div {
+  width: 120px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.social div.tweet {
+  margin-top: 2px;
+  margin-left: 15px;
+}
+
+.twitter-share-button[style] { vertical-align: text-bottom !important; }
