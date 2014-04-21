@@ -18,4 +18,4 @@ Now, these following 3 things will happen:
 
 Please drop us a line at [ukspringroll@gmail.com](mailto:ukspringroll@gmail.com) if you wish to get to know more about us and the project. We are looking forward to hearing from you.
 
-As for getting more regular updates, [our Facebook Page](https://www.facebook.com/TeamSpringRoll) is the more casual place, while this journal will be my own geeky corner where I share my personal experience about working with Team Spring Roll.
+As for getting more regular updates, [our Facebook Page](https://www.facebook.com/TeamSpringRoll) is the more casual place, while this journal will be my own geeky corner where I share my personal experience and commentaries about Team Spring Roll's challenges and the fun we have solving them.
