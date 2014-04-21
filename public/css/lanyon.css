@@ -25,6 +25,7 @@
  * Pagination
  * Reverse layout
  * Themes
+ * Customisation
  */
 
 
@@ -524,4 +525,9 @@ a.pagination-item:hover {
 .theme-base-0f .sidebar-toggle,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Customisation */
+.social div {
+  float: left;
 }

@@ -17,9 +17,9 @@ author:
 
 paginate:         5
 
-# Custom vars
-version:          1.0.0
-
 link:
   team:           https://famanson.github.io/spring-roll
   personal:       http://famanson.com
+
+facebook:
+  appId:          409464975807064
