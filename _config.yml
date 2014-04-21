@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Son's Corner
+tagline:          '/* a Team Spring Roll dev journal and commentaries */'
+description:      ''
+url:              http://famanson.github.io/dev-journal
+
+author:
+  name:           'Son Pham'
+  url:            http://famanson.com
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+link:
+  team:           https://famanson.github.io/spring-roll
+  personal:       http://famanson.com
