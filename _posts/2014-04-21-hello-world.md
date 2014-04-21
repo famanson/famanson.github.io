@@ -5,7 +5,9 @@ title: print("Hello World")
 
 Today is the day Hai and I publicly announce the creation of [Team Spring Roll](https://famanson.github.io/spring-roll) and our first project, [Project Spring Roll](https://www.indiegogo.com/projects/project-spring-roll) after a full month of preparation in stealth.
 
-The idea of the team and the project is something I had a very long while back, but never had the sufficient skills, determination, support or time to piece everything together. And now that the first stage of making everything public has been done, these following 3 things will happen:
+The idea of the team and the project is something I had a very long while back, but never had the sufficient skills, determination, support or time to piece everything together until I pitched the idea to Hai at the beginning of March.
+
+Now, these following 3 things will happen:
 
 * Active development of the new SVUK Marketplace starts now
 * Plans for our workshops will be drawn up
