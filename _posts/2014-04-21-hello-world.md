@@ -8,7 +8,7 @@ day: 21
 
 About damn time! Today is the day Hai and I publicly announce the launch of [Team Spring Roll](https://famanson.github.io/spring-roll) and the beginning of our first project with the same name, [Project Spring Roll](https://www.indiegogo.com/projects/project-spring-roll) after a full month of preparation in stealth.
 
-I came up with the idea a long time back, but never had the sufficient skills, determination, support or time to piece everything together until I pitched it to Hai at the beginning of March. Since then we have been working very hard in our own time to draw up a proposal, setting up operation plans, organisation and parts of the specification. In the process, we have developed a much better vision for both the team and the project with great input from SVUK and Vietpro (the incredible Thao and her husband Aaron in particular). Thanks a lot, guys!
+I came up with the idea a long time back, but never had the sufficient skills, determination, support or time to piece everything together until I pitched it to Hai in March. Since then we have been working very hard in our own time to draw up a proposal, operation plans, organisation, writing the specification, and creating the Indiegogo campaign. In the process, we have developed a much better vision for both the team and the project with great input from SVUK and Vietpro (the incredible Thao and her husband Aaron in particular). Thanks a lot, guys!
 
 Now, these following 3 things will come up next:
 
