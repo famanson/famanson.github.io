@@ -556,3 +556,8 @@ a.pagination-item:hover {
     margin-bottom: 50px;
   }
 }
+
+img {
+    max-width: 640px;
+    margin: 0 auto;
+}
