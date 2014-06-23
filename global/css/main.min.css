@@ -117,6 +117,10 @@ body {
     letter-spacing: -1px;
 }
 
+.center {
+    text-align: center;
+}
+
 .main-header {
     background-color: #000;
 }
