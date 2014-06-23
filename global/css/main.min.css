@@ -1,3 +1,39 @@
+.container {
+    width: 100% !important;
+}
+
+.ribbon-headline {
+  text-align: center;
+  width: 40%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background: #e5e5e5;
+  background: linear-gradient(#f5f5f5, #e5e5e5);
+  box-shadow: 0 -1px 0 rgba(255,255,255,.8) inset;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.ribbon-headline:before,
+.ribbon-headline:after {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  content:'';
+  border-top: 6px solid #555;
+  border-left: 6px solid transparent;
+}
+
+.ribbon-headline:before {
+  border-top: 6px solid #555;
+  border-right: 6px solid transparent;
+  border-left: none;
+  left: auto;
+  right: 0;
+  bottom: -6px;
+}
+
 .caption {
     text-align: center;
     margin: 10px 0 20px 0;
@@ -39,7 +75,7 @@ body {
 .main {
     padding-right: 15px;
     padding-left: 15px;
-    margin-top: 220px;
+    margin-top: 20px;
 }
 
 .main .col-lg-4 {
@@ -81,30 +117,32 @@ body {
     letter-spacing: -1px;
 }
 
-.roll-header {
-    position: absolute;
-    top: 0;
-    left: 0;
+.main-header ul {
     width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ddd;
 }
 
-.roll-header h1 {
+.main-header ul .brand {
+    padding: 15px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+}
+
+.main-header h1 {
     font-size: 56px;
 }
 
-.roll-header .roll-icon {
+.main-header .roll-icon {
     max-width: 100%;
 }
 
-.roll-header .roll-icon img {
+.main-header .roll-icon img {
     float: right;
     max-width: 100%;
 }
 
-.roll-header .roll-header-text {
+.main-header .main-header-text {
     float: left;
 }
 
@@ -239,7 +277,7 @@ body {
 }
 
 @media (max-width:1440px) {
-    .roll-header {
+    .main-header {
         padding: 10px 0;
     }
 
@@ -247,7 +285,7 @@ body {
         max-width: 40%;
     }
 
-    .roll-header img {
+    .main-header img {
         max-width: 100%;
     }
 }
@@ -259,11 +297,11 @@ body {
 }
 
 @media screen and (max-width:517px) {
-    .roll-header-text h1 {
+    .main-header-text h1 {
         font-size: 40px;
     }
 
-    .roll-header-text h4 {
+    .main-header-text h4 {
         font-size: 12px;
     }
 
@@ -321,7 +359,7 @@ body {
         display: block;
     }
 
-    .roll-header {
+    .main-header {
         position: relative;
         padding-bottom: 50px;
     }
@@ -332,5 +370,28 @@ body {
 
     .last.row {
         margin-bottom: 0;
+    }
+}
+
+.container .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container .row {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container .row {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container .row {
+        width: 1170px;
     }
 }
