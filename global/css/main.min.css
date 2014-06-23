@@ -117,12 +117,16 @@ body {
     letter-spacing: -1px;
 }
 
+.main-header {
+    background-color: #000;
+}
+
 .main-header ul {
     width: 100%;
-    background-color: #ddd;
 }
 
 .main-header ul .brand {
+    color: #fff;
     padding: 15px;
     line-height: 20px;
     position: relative;
