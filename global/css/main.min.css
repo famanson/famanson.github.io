@@ -120,6 +120,10 @@ body {
     letter-spacing: -1px;
 }
 
+.featurette-heading.text-schedule {
+    color: #3594cb;
+}
+
 .center {
     text-align: center;
 }
