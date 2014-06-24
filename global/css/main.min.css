@@ -122,7 +122,7 @@ body {
 }
 
 .main-header {
-    background-color: #000;
+    background-color: #3594cb;
 }
 
 .main-header ul {
@@ -137,21 +137,30 @@ body {
     display: block;
 }
 
+.main-header ul li:first-child {
+    float:left;
+}
+
+.main-header ul li {
+    float:right;
+}
+
+
+.main-header ul a {
+    color: #fff;
+    border-left: 1px solid #fff;
+}
+
+.main-header ul a.last {
+    border-right: 1px solid #fff;
+}
+
+.main-header ul a:hover {
+    background-color: #6cbfee;
+}
+
 .main-header h1 {
     font-size: 56px;
-}
-
-.main-header .roll-icon {
-    max-width: 100%;
-}
-
-.main-header .roll-icon img {
-    float: right;
-    max-width: 100%;
-}
-
-.main-header .main-header-text {
-    float: left;
 }
 
 .bs-sidebar .nav>.active>ul {
