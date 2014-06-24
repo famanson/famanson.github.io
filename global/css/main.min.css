@@ -163,6 +163,28 @@ body {
     font-size: 56px;
 }
 
+.testimonial p.content {
+    padding: 0 5px;
+}
+
+span.laquo{
+    background:url(../img/laquo.png) no-repeat;
+    width:14px;
+    height:11px;
+    position:absolute;
+    left:0;
+    top:4px;
+    display:block;
+}
+
+span.raquo{
+    background:url(../img/raquo.png) no-repeat right 4px;
+    width:13px;
+    height:15px;
+    padding-left:4px;
+    display:inline-block;
+}
+
 .bs-sidebar .nav>.active>ul {
     display: block;
     margin-bottom: 8px;
