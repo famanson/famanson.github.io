@@ -1,0 +1,295 @@
+body > :not(#prologue) {
+    opacity: 0;
+}
+
+body.init {
+    background-color: #0a7a88;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#prologue {
+    height: 100%;
+    position: relative;
+}
+
+#reveal {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    bottom: 10px;
+    padding-bottom: 10px;
+    z-index: 5;
+}
+
+#reveal-text {
+    font-family: 'Allan', cursive;
+    font-size: 40px;
+    margin: 5px auto;
+    opacity: 0;
+}
+
+#start-text {
+    font-family: 'Allan', cursive;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+
+#reveal-button {
+    font-size: 50px;
+}
+
+#reveal:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 30px rgba(100%,100%,100%,0.7);
+}
+
+#balloon-wrapper {
+    bottom: 30%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+}
+
+#prologue-header {
+    font-family: 'Allan', cursive;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    color: #fff;
+}
+
+#prologue-header h2 {
+    font-size: 45px;
+}
+
+#prologue-header span {
+    font-size: 25px;
+}
+
+#prologue-header h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+#prologue-header span {
+    font-size: 40px;
+}
+
+#balloon {
+    height: 100%;
+    display: block;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.bobble {
+    -webkit-animation: bobble 2s infinite;
+    -o-animation: bobble 2s infinite;
+    -moz-animation: bobble 2s infinite;
+    animation: bobble 2s infinite;
+}
+
+.bobble.stop {
+    animation-iteration-count: 1;
+}
+
+#cloud1, #cloud2, #cloud3 {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+}
+
+#cloud1 {
+    z-index: 1;
+    top: 20%;
+    right: 55%;
+}
+
+#cloud2 {
+    z-index: 1;
+    top: 85%;
+    left: 40%;
+}
+
+#cloud3 {
+    z-index: 3;
+    top: 40%;
+    left: 55%;
+}
+
+.cloud-main {
+    background: #DEEBC0;
+    border-radius: 100em;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(#DEEBC0 70%, #B8DEC9);
+}
+
+.cloud-center {
+    margin: 0 auto;
+    background: #DEEBC0;
+    position: absolute;
+    border-radius: 100em;
+}
+
+.cloud-left {
+    margin: 0 auto;
+    background: #DEEBC0;
+    position: absolute;
+    border-radius: 100em;
+}
+
+#reveal {
+    bottom: 10%;
+}
+.cloud-main {
+    width: 350px;
+    height: 130px;
+    top: 50px;
+}
+
+.cloud-center {
+    width: 130px;
+    height: 130px;
+    top: 10px;
+    left: 40px;
+}
+
+.cloud-left {
+    width: 180px;
+    height: 180px;
+    top: -20px;
+    left: 110px;
+}
+
+@media (max-height: 1024px) {
+    #prologue-header {
+        top: 5%;
+    }
+    #reveal-text {
+        font-size: 30px;
+    }
+    #start-text {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    #reveal {
+        bottom: 0;
+    }
+    #reveal-button {
+        font-size: 40px;
+    }
+}
+
+@media (max-height: 800px) {
+    #reveal-text {
+        display: none;
+    }
+}
+
+@media (max-height: 720px) {
+    #reveal-text {
+        font-size: 25px;
+    }
+    #start-text {
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    #prologue-header h2 {
+        font-size: 30px;
+    }
+    #prologue-header span {
+        font-size: 30px;
+    }
+    #cloud1, #cloud2, #cloud3 {
+        width: 175px;
+        height: 200px;
+        position: absolute;
+    }
+    .cloud-main {
+        width: 175px;
+        height: 50px;
+        top: 50px;
+    }
+
+    .cloud-center {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        left: 20px;
+    }
+
+    .cloud-left {
+        width: 90px;
+        height: 90px;
+        top: 0;
+        left: 60px;
+    }
+}
+
+@media (max-height: 512px) {
+    #prologue-header h2 {
+        font-size: 20px;
+    }
+    #prologue-header span {
+        font-size: 20px;
+    }
+    #balloon-wrapper {
+        bottom: 35%;
+    }
+    #reveal-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 480px) {
+    #prologue-header {
+        top: 0;
+    }
+    #reveal-button {
+        font-size: 30px;
+    }
+    #reveal {
+        padding: 0;
+    }
+    #cloud1, #cloud2, #cloud3 {
+        width: 120px;
+        height: 100px;
+        position: absolute;
+    }
+
+    .cloud-main {
+        width: 120px;
+        height: 35px;
+        top: 50px;
+    }
+
+    .cloud-center {
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        left: 15px;
+    }
+
+    .cloud-left {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: 45px;
+    }
+}
