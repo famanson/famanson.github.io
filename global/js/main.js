@@ -23,25 +23,10 @@ function identifyBrowser(e, t, n) {
     return null
 }
 
-function hover(e, t) {
-    e.setAttribute("src", t)
-}
-
-function unhover(e, t) {
-    e.setAttribute("src", t)
-}
-
-$(window).on("beforeunload", function () {
-    $(window).scrollTop(0)
-});
 $(document).ready(function () {
     if (window.location.hash) {
         window.location = ""
     }
-    $("body").scrollspy({
-        target: "#sidebar.spy-active",
-        offset: 280
-    });
     var e = "body";
     if (identifyBrowser(null) === "firefox" || identifyBrowser(null) === "msie") {
         e = "html"
@@ -65,12 +50,37 @@ $(document).ready(function () {
                 }
                 $("html,body").animate({
                     scrollTop: n
-                }, i, function () {
-                    $(e).closest("li").addClass("active");
-                    $("body").scrollspy("refresh")
-                });
+                }, i);
                 return false
             }
         }
     });
-})
+
+    $("#reveal-button").addClass("fa-lock");
+
+    $("#reveal").hover(function() {
+        $("#reveal-button").removeClass("fa-lock");
+        $("#reveal-button").addClass("fa-unlock-alt");
+        $("#reveal-text").animate({
+            opacity: 1
+        }, 200, function() {
+            $("#start-text").animate({
+                opacity: 0
+            }, 200);
+        });
+    }, function() {
+        $("#reveal-button").removeClass("fa-unlock-alt");
+        $("#reveal-button").addClass("fa-lock");
+        $("#reveal-text").animate({
+            opacity: 0
+        }, 200, function(){
+            $("#start-text").animate({
+                opacity: 1
+            }, 200);
+        });
+    });
+});
+
+$(window).bind("beforeunload", function () {
+    $(window).scrollTop(0)
+});

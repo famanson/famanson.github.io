@@ -1,6 +1,6 @@
 <!-- This website was built with Bootstrap (http://getbootstrap.com/) and hosted on GitHub Pages (https://pages.github.com/) -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GlobalCNNers">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,131 +8,110 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./img/cnn.png">
     <title>CNN Conference 2014</title>
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/prologue.css" rel="stylesheet">
+    <link href="./css/animations.css" rel="stylesheet">
     <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/colours.css" rel="stylesheet">
     <link href="./css/timeline.css" rel="stylesheet">
     <link href="./css/flag-icon.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Libraries/dependencies -->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/holder.js"></script>
+    <script src="./lib/angular.js"></script>
+    <script src="./lib/angular-sanitize.js"></script>
+    <script src="./lib/angular-translate.min.js"></script>
+    <script src="./lib/freewall.js"></script>
+    <!-- Our own js files -->
+    <script src="./js/data.js"></script>
+    <script src="./js/controllers.js"></script>
+    <script src="./js/directives.js"></script>
+    <script src="./js/filters.js"></script>
+    <script src="./js/translations.js"></script>
+    <script src="./js/main.js"></script>
   </head>
-  <body>
+  <body ng-controller="ParentCtrl" class="init">
+    <div id="prologue">
+        <div class="center" id="prologue-header">
+            <h2><b>Global CNNers</b></h2>
+            <span>proudly introduce:</span>
+        </div>
+        <div id="balloon-wrapper">
+            <img id="balloon" class="bobble" src="./img/balloon-text.png"></img>
+            <div id="cloud1">
+                <div class="cloud-main"></div>
+                <div class="cloud-center"></div>
+                <div class="cloud-left"></div>
+            </div>
+            <div id="cloud2">
+                <div class="cloud-main"></div>
+                <div class="cloud-center"></div>
+                <div class="cloud-left"></div>
+            </div>
+            <div id="cloud3">
+                <div class="cloud-main"></div>
+                <div class="cloud-center"></div>
+                <div class="cloud-left"></div>
+            </div>
+        </div>
+        <div balloonpop id="reveal">
+            <div id="reveal-text">To the Sky!</div>
+            <div id="reveal-button" class="fa fa-lg"></div>
+            <div id="start-text">Click to Unlock</div>
+        </div>
+    </div>
     <div class="main-header">
         <div class="col-md-12">
-            <ul class="nav navbar-nav">
-                <li><span class="brand"><b>CNN Conference 2014</b></span></li>
-                <li><a href="#contact-us" class="last">Contact Us</a></li>
-                <li><a href="#docs">Slides and Documents</a></li>
-                <li><a href="#staff">CNN Conference staff</a></li>
-                <li><a href="#speakers">Guest Speakers</a></li>
-                <li><a href="#schedule">Conference Schedule</a></li>
-                <li><a href="#hello">Hello CNNers!</a></li>
+            <ul id="topbar" class="nav navbar-nav">
+                <li class="brand"><span><b>{{ 'TITLE_HEADING' | translate }}</b></span></li>
+                <li class="brand" ng-controller="LanguageCtrl" id="language">{{ 'LANGUAGE_HEADING' | translate }}: <span ng-class="{'grayscale':!isLangActive('en')}" langPicker="en" class="flag-icon flag-icon-gb"></span> <span ng-class="{'grayscale':!isLangActive('vn')}" langPicker="vn" class="flag-icon flag-icon-vn"></span></li>
+                <li><a href="#contact-us" class="last">{{ 'CONTACT_HEADING' | translate }}</a></li>
+                <li><a href="#testimonials">{{ 'TESTIMONIALS_HEADING' | translate }}</a></li>
+                <li><a href="#docs">{{ 'DOCS_HEADING' | translate }}</a></li>
+                <li><a href="#staff">{{ 'STAFF_HEADING' | translate }}</a></li>
+                <li><a href="#speakers">{{ 'SPEAKERS_HEADING' | translate }}</a></li>
+                <li><a href="#schedule">{{ 'SCHEDULE_HEADING' | translate }}</a></li>
+                <li><a href="#hello">{{ 'HELLO_HEADING' | translate }}</a></li>
             </ul>
         </div>
         <div style='clear: both'></div>
     </div>
-    <img class="featurette-image img-responsive banner" src="./img/conference-banner.jpg">
+    <img class="featurette-image img-responsive banner" src="./img/cnn-conference.jpg">
     <div class="container main">
         <!-- START THE FEATURETTES -->
-        <div class="row featurette">
-            <a class="anchor" id="hello"></a>
-            <div class="col-md-12">
-                <h2 class="featurette-heading center text-muted">Hello CNNers!</h2>
-                <h2 class="center">We are Global CNNers, and we've come around to say hi.</h2>
-                <div class="center col-md-12">
-                    <div class="col-md-3">
-                        <img class="img-square img-responsive" data-src="holder.js/240x320">
-                        <span>We are not different from you. We too started out - way back in the day - as students at this school.</span>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-square img-responsive" data-src="holder.js/240x320">
-                        <span>Then we left for a new adventure in distant lands, clueless and innocent (maybe more clueless than innocent)</span>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-square img-responsive" data-src="holder.js/240x320">
-                        <span>We had successes and we had failures. More importantly, we learnt from them - and we felt compelled to share this knowledge.</span>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-square img-responsive" data-src="holder.js/240x320">
-                        <span>We want to pass the torch on to the next generation. A bunch of us got together for the first Conference. 6 years ago.</span>
-                    </div>
+        <div class="featurette-wrapper hello-wrapper">
+            <div class="row featurette">
+                <a class="anchor" id="hello"></a>
+                <div class="col-md-12">
+                    <h2 class="featurette-heading center"><b>{{ 'HELLO_HEADING' | translate }}</b></h2>
+                    <h2 class="center">{{ 'HELLO_TEXT_1' | translate }}</h2>
                 </div>
             </div>
         </div>
 
-        <hr class="invisible featurette-divider">
-        <div class="cnn-bg">
+        <div class="featurette-wrapper schedule-wrapper" ng-controller="ScheduleCtrl">
             <div class="row featurette">
                 <a class="anchor" id="schedule"></a>
                 <div class="col-md-12">
-                    <h2 class="featurette-heading center text-schedule">Conference Schedule</h2>
+                    <h2 class="featurette-heading center text-schedule"><b>{{ 'SCHEDULE_HEADING' | translate }}</b></h2>
+                    <h2 class="featurette-heading center text-schedule"><b>{{ 'SCHEDULE_TEXT_1' | translate }}</b></h2>
+                    <h4 class="featurette-heading center text-schedule">{{ 'SCHEDULE_TEXT_2' | translate }}</h4>
                     <ul class="cbp_tmtimeline">
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 07:30"><span>01/01/14</span> <span>07:45</span></time>
-                            <div class="cbp_tmicon fa fa-users fa-lg"></div>
+                        <li ng-repeat="entry in schedule">
+                            <time class="cbp_tmtime" datetime="2014-01-01 {{ entry.time }}"><span>01/01/14</span> <span>{{ entry.time }}</span></time>
+                            <div class="cbp_tmicon fa {{ entry.logo }} fa-lg"></div>
                             <div class="cbp_tmlabel">
-                                <h2>Meetup</h2>
-                                <p>Conference is open to the public</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 08:30"><span>01/01/14</span><span>08:30</span></time>
-                            <div class="cbp_tmicon fa-paper-plane-o fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Guest Speaker #1: High School Application</h2>
-                                <p>High School application, scholarships, papers and exams etc</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 09:00"><span>01/01/14</span><span>09:00</span></time>
-                            <div class="cbp_tmicon fa-university fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Guest Speaker #2: University Application</h2>
-                                <p>University application, scholarships, papers and exams etc</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 09:30"><span>01/01/14</span><span>09:30</span></time>
-                            <div class="cbp_tmicon fa-comments-o fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Q&amp;A #1</h2>
-                                <p>Question and Answer session #1</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 10:00"><span>01/01/14</span><span>10:00</span></time>
-                            <div class="cbp_tmicon fa-coffee fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Tea break: Casual hangout</h2>
-                                <p>Tea, coffee, soft drinks, biscuits</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 10:30"><span>01/01/14</span><span>10:30</span></time>
-                            <div class="cbp_tmicon fa-mortar-board fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Guest Speaker #3: School, Uni life</h2>
-                                <p>Daily life</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 11:00"><span>01/01/14</span><span>11:00</span></time>
-                            <div class="cbp_tmicon fa-music fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Guest Speaker #4: Whatever other stuff</h2>
-                                <p>Have fun?</p>
-                            </div>
-                        </li>
-                        <li>
-                            <time class="cbp_tmtime" datetime="2014-01-01 11:30"><span>01/01/14</span><span>11:30</span></time>
-                            <div class="cbp_tmicon fa-comments-o fa-lg"></div>
-                            <div class="cbp_tmlabel">
-                                <h2>Q&amp;A #2</h2>
-                                <p>Question and Answer session #2</p>
+                                <h2 ng-bind-html="entry.title | translate"></h2>
+                                <p ng-bind-html="entry.description | translate | listgen"></p>
                             </div>
                         </li>
                     </ul>
@@ -140,156 +119,254 @@
             </div>
         </div>
 
-        <hr class="invisible featurette-divider">
-
-        <div class="row featurette">
-            <a class="anchor" id="speakers"></a>
-            <div class="col-md-12">
-                <h2 class="featurette-heading center"><span class="text-muted">Guest Speakers</span></h2>
-                <p class="lead center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="col-md-12">
-                <div class="col-md-6">
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>Pham Anh Son, Project Consultant.</b></h4>
-                            <div>K37 CNNer, Oxford Uni Alumni.</div>
-                            <div>Software Engineer, UK</div>
+        <div class="featurette-wrapper speakers-wrapper" ng-controller="GuestsCtrl">
+            <div class="row featurette">
+                <a class="anchor" id="speakers"></a>
+                <h2 class="featurette-heading center"><b>{{ 'SPEAKERS_HEADING' | translate }}</b></h2>
+                <h4 class="featurette-heading center"><b>{{ 'SPEAKERS_TEXT_1' | translate }}</b></h4>
+                <div class="col-md-12" id="guests-view">
+                    <div class="col-md-{{ 12/guestPartitionSize }}" ng-repeat="guests in guestGroup">
+                        <div ng-repeat="guest in guests">
+                            <div class="flip-container guest" flippable ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="pin">
+                                            <img class="img-responsive holder" data-src="holder.js/1024x1024">
+                                            <div class="text">
+                                                <h4><span class="flag-icon flag-icon-{{ guest.country }}"></span>  <b>{{ guest.name }}</b></h4>
+                                                <div>{{ guest.firstBioLine | translate }}</div>
+                                                <div>{{ guest.secondBioLine | translate }}</div>
+                                            </div>
+                                            <div style='clear: both'></div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="pin">
+                                            <div class="text">
+                                                <h4><span class="flag-icon flag-icon-{{ guest.country }}"></span>  <b>{{ guest.name }}.</b></h4>
+                                                <p class="lead">{{ guest.back | translate }}</p>
+                                                <p class="lead">{{ guest.backExtra | translate }}</p>
+                                            </div>
+                                            <div style='clear: both'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style='clear: both'></div>
+                            </div>
                         </div>
-                        <div style='clear: both'></div>
-                    </div>
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>John Doe, Project Consultant.</b></h4>
-                            <div>Incididunt ut labore et</div>
-                            <div>Ut enim ad minim veniam</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>Pham Anh Son, Project Consultant.</b></h4>
-                            <div>K37 CNNer, Oxford Uni Alumni.</div>
-                            <div>Software Engineer, UK</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>John Doe, Project Consultant.</b></h4>
-                            <div>Incididunt ut labore et</div>
-                            <div>Ut enim ad minim veniam</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette last">
-            <a class="anchor" id="staff"></a>
-            <h2 class="featurette-heading center"><span class="text-muted">CNN Conference staff</span></h2>
-            <div class="col-md-12">
-
-                <div class="col-md-4">
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>Pham Anh Son, Project Consultant.</b></h4>
-                            <div>K37 CNNer, Oxford Uni Alumni.</div>
-                            <div>Software Engineer, UK</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>John Doe, Project Consultant.</b></h4>
-                            <div>Incididunt ut labore et</div>
-                            <div>Ut enim ad minim veniam</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="pin uk">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-gb"></span>  <b>Minh 'madmin' Dang, Project Consultant.</b></h4>
-                            <div>K38 CNNer, Lancaster Uni Alumni.</div>
-                            <div>Loan shark, Vietnam</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                    <div class="pin us">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x512">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-us"></span>  <b>Ly Bao Tran, Project Consultant.</b></h4>
-                            <div>Lorem ipsum dolor sit amet</div>
-                            <div>Consectetur adipisicing</div>
-                        </div>
-                        <div style='clear: both'></div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="pin us">
-                        <img class="img-square img-responsive" data-src="holder.js/1024x1024">
-                        <div class="text">
-                            <h4><span class="flag-icon flag-icon-us"></span>  <b>Nguyen Mai Phuong, Conference Admin.</b></h4>
-                            <div>Lorem ipsum dolor sit amet</div>
-                            <div>Consectetur adipisicing</div>
-                        </div>
-                        <div style='clear: both'></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="featurette-wrapper staff-wrapper" ng-controller="StaffCtrl">
+            <div class="row featurette last">
+                <a class="anchor" id="staff"></a>
+                <h2 class="featurette-heading center"><b>{{ 'STAFF_HEADING' | translate }}</b></h2>
+                <h4 class="featurette-heading center"><b>{{ 'STAFF_TEXT_1' | translate }}</b></h4>
+                <div id="flag-picker-wrapper" ng-if="staffWallEnabled">
+                    <div id="flag-picker">
+                        <h1>
+                            <i class="fa fa-reorder"></i>
+                            <span flag-picker-activate ng-repeat="country in countries" class="flag-icon flag-icon-{{ country }}" country="{{ country }}">
+                                &nbsp;
+                            </span>
+                        </h1>
+                    </div>
+                    <div id="flag-picker-tip" class="bubble">
+                        <p class="lead" id="flag-tip-1"><i class="fa fa-flag"></i>  {{ 'FLAG_PICKER_TIP_1' | translate }}</p>
+                        <p class="lead" id="flag-tip-2">{{ 'FLAG_PICKER_TIP_2_1' | translate }}  <i class="fa fa-times"></i>  {{ 'FLAG_PICKER_TIP_2_2' | translate }}  <i class="fa fa-refresh"></i></p>
+                    </div>
+                </div>
 
-        <hr class="featurette-divider">
+                <div class="col-md-12" id="staff-view" walls="walls">
+                    <!-- UK -->
+                    <div ng-repeat="member in staff" ng-if="staffWallEnabled" on-staff-finish>
+                        <div ng-if="member.flippable" flippable class="flip-container member {{ member.country }}" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="pin {{ member.rank }}">
+                                        <img ng-if="!member.imagePresent" class="img-responsive holder" data-src="holder.js/{{ member.picsize }}">
+                                        <img ng-if="member.imagePresent" class="img-responsive" ng-src="./img/portraits/{{member.image}}">
+                                        <div class="text">
+                                            <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b></h4>
+                                            <h5><b ng-bind-html="member.title | translate"></b></h5>
+                                            <div ng-bind-html="member.firstBioLine | translate"></div>
+                                            <div ng-bind-html="member.secondBioLine | translate"></div>
+                                        </div>
+                                        <div style='clear: both'></div>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="pin {{ member.rank }}">
+                                        <div class="text">
+                                            <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b></h4>
+                                            <h5><b ng-bind-html="member.title | translate"></b></h5>
+                                            <p class="lead" ng-bind-html="member.back | translate | listgen"></p>
+                                            <p class="lead" ng-bind-html="member.backExtra | translate"></p>
+                                        </div>
+                                        <div style='clear: both'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style='clear: both'></div>
+                        </div>
 
-        <div class="row featurette last">
-            <a class="anchor" id="docs"></a>
-            <h2 class="featurette-heading center"><span class="text-muted">Slides and Documents</span></h2>
-            <p class="lead center"><b>Slideshows and Document files from the Conference (TODO)</b></p>
+                        <div ng-if="!member.flippable" class="pin {{ member.rank }} {{ member.country }} member">
+                            <img ng-if="!member.imagePresent" class="img-responsive holder" data-src="holder.js/{{ member.picsize }}">
+                            <img ng-if="member.imagePresent" class="img-responsive" ng-src="./img/portraits/{{member.image}}">
+                            <div class="text">
+                                <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b></h4>
+                                <h5><b ng-bind-html="member.title | translate"></b></h5>
+                                <div ng-bind-html="member.firstBioLine | translate"></div>
+                                <div ng-bind-html="member.secondBioLine | translate"></div>
+                            </div>
+                            <div style='clear: both'></div>
+                        </div>
+                    </div>
+
+                    <div ng-repeat="staff in staffGroup" class="col-md-{{ 12/staffPartitionSize }}" ng-if="!staffWallEnabled" on-staff-finish>
+                        <div ng-repeat="member in staff">
+                            <div ng-if="member.flippable" flippable class="flip-container member {{ member.country }}" ng-class="{ 'no-wall' : !staffWallEnabled }" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="pin {{ member.rank }}">
+                                            <img ng-if="!member.imagePresent" class="img-responsive holder" data-src="holder.js/{{ member.picsize }}">
+                                            <img ng-if="member.imagePresent" class="img-responsive" ng-src="./img/portraits/{{member.image}}">
+                                            <div class="text">
+                                                <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b></h4>
+                                                <h5><b ng-bind-html="member.title | translate"></b></h5>
+                                                <div ng-bind-html="member.firstBioLine | translate"></div>
+                                                <div ng-bind-html="member.secondBioLine | translate"></div>
+                                            </div>
+                                            <div style='clear: both'></div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="pin {{ member.rank }}">
+                                            <div class="text">
+                                                <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b></h4>
+                                                <h5><b ng-bind-html="member.title | translate"></b></h5>
+                                                <p class="lead" ng-bind-html="member.back | translate | listgen"></p>
+                                                <p class="lead" ng-bind-html="member.backExtra | translate"></p>
+                                            </div>
+                                            <div style='clear: both'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style='clear: both'></div>
+                            </div>
+
+                            <div ng-if="!member.flippable" class="pin {{ member.rank }} {{ member.country }} member">
+                                <img ng-if="!member.imagePresent" class="img-responsive holder" data-src="holder.js/{{ member.picsize }}">
+                                <img ng-if="member.imagePresent" class="img-responsive" ng-src="./img/portraits/{{member.image}}">
+                                <div class="text">
+                                    <h4><span class="flag-icon flag-icon-{{ member.country }}"></span>  <b ng-bind-html="member.name | translate"></b>, <b ng-bind-html="member.title | translate"></b></h4>
+                                    <div ng-bind-html="member.firstBioLine | translate"></div>
+                                    <div ng-bind-html="member.secondBioLine | translate"></div>
+                                </div>
+                                <div style='clear: both'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="featurette-wrapper docs-wrapper">
+            <div class="row featurette">
+                <a class="anchor" id="docs"></a>
+                <h2 class="featurette-heading center"><b>{{ 'DOCS_HEADING' | translate }}</b></h2>
+                <div class="col-md-12" id="docs-desc">
+                    <div class="col-md-4">
+                        <h3 class="center"><i class="fa fa-cloud-download"></i>  <b>{{ 'DOCS_CONVENIENT' | translate }}</b></h3>
+                        <p class="lead">{{ 'DOCS_CONVENIENT_TEXT' | translate }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="center"><i class="fa fa-cubes"></i>  <b>{{ 'DOCS_ORG' | translate }}</b></h3>
+                        <p class="lead">{{ 'DOCS_ORG_TEXT' | translate }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="center"><i class="fa fa-lightbulb-o"></i>  <b>{{ 'DOCS_THOUGHT' | translate }}</b></h3>
+                        <p class="lead">{{ 'DOCS_THOUGHT_TEXT' | translate }}</p>
+                    </div>
+                </div>
+                <a class="center btn btn-default btn-lg" href="https://drive.google.com/folderview?id=0Bx-702viUgFnNDZaVk9FUTF5dlk&usp=sharing" target="_blank">
+                    <i class="fa fa-folder-open"></i>  {{ 'DOCS_CLICK' | translate }}
+                </a>
+            </div>
         </div>
 
-        <hr class="featurette-divider">
+        <div class="featurette-wrapper testimonials-wrapper" ng-controller="TestimonialsCtrl">
+            <div class="row featurette">
+                <a class="anchor" id="testimonials"></a>
+                <h2 class="featurette-heading center"><b>{{ 'TESTIMONIALS_HEADING' | translate }}</b></h2>
+                <div class="col-md-12" id="testimonials-view">
+                    <div class="col-md-{{ 12/testimonialPartitionSize }}" ng-repeat="testimonials in testimonialGroup">
+                        <div ng-repeat="testimonial in testimonials">
+                            <div class="testimonial">
+                                <div class="center">
+                                    <img class="img-circle img-responsive" data-src="holder.js/120x120">
+                                    <p class="lead"><strong>— {{ testimonial.author }} —</strong></p>
+                                    <p class="lead"><i class="fa fa-quote-left"></i>  {{ testimonial.content }}  <i class="fa fa-quote-right"></i></p>
+                                </div>
+                                <div style='clear: both'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="row featurette last">
-            <a class="anchor" id="contact-us"></a>
-            <h2 class="featurette-heading center"><span class="text-muted">Contact Us</span></h2>
-            <p class="lead center">We are looking forward to hearing from you!</p>
+        <div class="featurette-wrapper contact-us-wrapper">
+            <div class="row featurette">
+                <a class="anchor" id="contact-us"></a>
+                <h2 class="featurette-heading center"><b>{{ 'CONTACT_HEADING' | translate }}</b></h2>
+                <div class="col-md-12">
+                    <div id="signup" class="col-md-6">
+                        <h3><i class="fa fa-check"></i>  <b>{{ 'SIGNUP' | translate }}</b></h3>
+                        <p class="lead">{{ 'SIGNUP_TEXT' | translate }}</p>
+                        <a class="btn btn-default btn-lg" href="https://docs.google.com/forms/d/13Zbs9QIl1XS7J6IjiqRunIc1TTQPKlRFO6-CxnDcSIU/viewform?c=0&w=1" target="_blank">
+                            <i class="fa fa-rocket"></i>  {{ 'SIGNUP_CLICK' | translate }}
+                        </a>
+                    </div>
+                    <div id="admin" class="col-md-6">
+                        <h3><i class="fa fa-support"></i>  <b>{{ 'SUPPORT' | translate }}</b></h3>
+                        <p class="lead">{{ 'SUPPORT_TEXT' | translate }}</p>
+                        <a class="btn btn-default btn-lg">
+                            <i class="fa fa-phone"></i>  {{ 'SUPPORT_CLICK' | translate }}
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div>
+                        <div id="email" class="col-md-6">
+                            <h3><i class="fa fa-envelope"></i>  <b>{{ 'EMAIL' | translate }}</b></h3>
+                            <p class="lead">{{ 'EMAIL_TEXT' | translate }}</p>
+                            <a href="mailto:globalcnners@gmail.com" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-share"></i>  {{ 'EMAIL_CLICK' | translate }}
+                            </a>
+                        </div>
+                        <div class="facebook col-md-6">
+                            <h3><i class="fa fa-facebook-square"></i>  <b>{{ 'FACEBOOK' | translate }}</b></h3>
+                            <p class="lead">{{ 'FACEBOOK_TEXT' | translate }}</p>
+                            <a class="btn btn-default btn-lg" href="https://www.facebook.com/GlobalCNNers" target="_blank">
+                                <i class="fa fa-thumbs-up"></i>  {{ 'FACEBOOK_CLICK' | translate }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- /END THE FEATURETTES -->
     </div>
-    <div class="footer">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <p class="back-to-top"><a href="#">Back to Top</a></p>
+    <div class="footer" finish-load>
+        <div class="col-md-12 center">
+            <p class="back-to-top"><i class="fa fa-arrow-circle-o-up"></i>  <a href="#hello"><u>Back to Top</u></a></p>
+            <p>Designed &amp; built with passion by <a href="https://github.com/famanson/" target="_blank"><u>famanson</u></a></p>
+            <p>Illustrated by Ly Bao  Tran &amp; Nguyen Vinh Loc</p>
             <p>&copy; Global CNNers 2014. All rights reserved.</p>
         </div>
-        <div class="col-md-3"></div>
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/holder.js"></script>
   </body>
 </html>
