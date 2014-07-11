@@ -199,7 +199,7 @@ body {
     width: 100%;
 }
 
-.pin img.holder, #staff-view .member.no-wall .pin img {
+.pin img.holder {
     height: auto !important;
 }
 
