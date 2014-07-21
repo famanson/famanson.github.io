@@ -14,7 +14,7 @@ I don't talk too much about the school to other people (of course unless they ar
 
 I gave it the last finishing touch the other day and it is now available at [http://globalcnners.org](http://globalcnners.org). And here are some of my development notes/remarks:
 
-- I can't design things. Period. I can do it when people tell me what to do, like at work when I need to set up some HTML/CSS/JS on my own I'd bring it to a front-ender later on then they give feedbacks and tell me to change this and that on the page. That's cool, but doing it from scratch? Uncool. But I did it anyway , and tbh I am glad it turned out ok. But this has set the bar so high for my next project, lol.
+- I can't design things. Period. I can do it when people tell me what to do, like at work when I need to set up some HTML/CSS/JS on my own I'd bring it to a front-ender later on then they give feedback and tell me to change this and that on the page. That's cool, but doing it from scratch? Uncool. But I did it anyway , and tbh I am glad it turned out ok. But this has set the bar so high for my next project, lol.
 
 - It should work with IE9+. I am still not sure how best to do this: do people test with IE on the go or do they often do everything in moz/webkit then move on to ie? I did the latter because I could not bother to fire up Windows/create a VM/debug in IE at all in the first place. At least it is safe to say I won't have to do it on a daily basis so I don't really care!
 
