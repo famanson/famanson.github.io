@@ -33,7 +33,7 @@ I have been lucky enough to experience a wide range of software development/engi
 
 * I have worked in a startup environment (for a company called [Esplorio](https://esplor.io)). The problem with it that I hate the most is that since there is no fixed routine, you are granted freedom, a lot of freedom, sometimes too much freedom. You could end up either overwork or underwork if you fail to manage yourself properly. Sometimes, the worst thing happens when inspiration comes at the wrong time of the day (3am in the morning, for instance) - your mind says yes, but your body says no and the next morning you are screwed. But in the end, some people like that kind of freedom, me included.
 
-* At Ocado, since I work in a team with set goals and projects with requirements from "the business", more often than not we have a pretty clear idea of what we are going to work on for the day. We'd use something called agile development and build our things in 2-week or 3-week sprints during which we have a set amount of tasks that the team as a whole have decided upon based on business requirements and level of urgency. Of course there are days where I'd spend on supporting business users and other Ocado teams or supporting deployments. All in all, life is more regulated and the balance is just right. I spend the right amount of time at work, pay's decent and stable, while still having enough free time for all of my side projects and builds.
+* At Ocado, since I work in a team with set goals and projects with requirements from "the business", more often than not we have a pretty clear idea of what we are going to work on for the day. We'd use something called agile development and build our things in 2-week or 3-week sprints during which we have a set amount of tasks that the team as a whole have decided upon based on business requirements and level of urgency. Of course there are days where I'd spend on supporting business users and other Ocado teams or supporting deployments. All in all, life is more regulated and the balance is just right. I spend the right amount of time at work (about 40-50 hours a week), pay's decent and stable, while still having enough free time to fit in all of my side projects and builds.
 
 ### What is the job market like for this sort of things?
 
@@ -49,13 +49,13 @@ The standard steps would be:
 * Phone Interview or Google Hangout/Teamview session for live coding on the fly
 * Go on-site for interviews/assessment day
 * More interviews
-* Get a call for the results
+* Get a call or email for the results
 
 For interviews, people have often talk about brain teasers they brand as "the Google questions" - I can safely say you should expect none of that and more of straightforward coding questions where you are required to code on a whiteboard or with a pen and paper.
 
 In fact, they like coding interviews so much that for companies like Google or Microsoft etc, they are going to hammer you hard with these kinds of things. My interview day in Microsoft HQ in Redmond had 5 of these formal code interviews. *Keep calm, think fast, talk slowly, explain your thought process thoroughly logically in steps, and work with the interviewer when you don't understand something or get stuck.* If you fail, always ask for feedback to see what went South and how to fix it.
 
-The process is not as nervy in smaller companies in general, but can still be quite the experience. At a bank technology interview, you may be required to do a group discussion and presentation. In some other places, the test is a lot easier than others, but the competition is still so fierce that it may require you to go the extra mile. Sometimes it is just as easy as a "Dude, I have this awesome idea, you want in?" in a startup setting.
+The process is not as nervy in smaller companies in general, but can still be quite the experience. At a bank technology interview, you may be required to do a group discussion and presentation. In some other places, the test is a lot easier than others, but the competition is still so fierce that it may require you to go the extra mile. Sometimes it is just as easy as a "Dude, I have this awesome idea, you want in?" in a more casual startup setting.
 
 ### What do I need to prepare for a good application?
 
@@ -85,7 +85,7 @@ The best place to show number 2 and maybe a bit of number 3 is on your CV and yo
 >    - How I did it: Java, Android 2.1 and the mOx's own API.
 
 already looking so much better than having a separate Skills section from the Work Experience section (imagine something like the LinkedIn profile: great for searching on the web page and their search tools, bad for a CV)
-* If you have built something and it is portable (a smartphone application or an Arduino project etc), don't be afraid to bring it to your interview and talk about it.
+* If you have built something and it is portable (a smartphone application or an Arduino project etc), don't be afraid to bring it to your interview and talk about it. Got your own website? Put that down on your CV. If you have your own domain for your email address, big plus
 
 My own CV is probably not the best in the world, but not a bad example either so I am just going to leave it [here](https://dl.dropboxusercontent.com/u/6477837/SonPhamCVNoAdd.pdf) for reference
 
