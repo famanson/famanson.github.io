@@ -63,6 +63,10 @@ There are so many things to talk about on this one, but I can certainly tell you
 
 The best place to show number 2 and maybe a bit of number 3 is on your CV and your GitHub account (if available). No 1 and 3 will certainly be reflected on your interview/assessment day performance. I can't just tell you exactly what to do, but here are a few random general tips:
 
+* People like your projects and want to see a good track record of being able to ship products. Coursework counts, your Github commits count, your side projects out of school time and cool open-source projects counts for extra credit, so go all out on that one. Since you have not had much work experience, this is the effective substitute. If you are a 2nd or 3rd year Computer Scientist in this day and age, you should *not* use this excuse any more:
+
+![Excuse](https://drive.google.com/uc?id=0B2OTEDYR8TTSOWo0OGZaRnF5X1U)
+
 * I know engineers are not required to look really formal all the time, but don't underdress to your interview. If unsure, just grab a clean shirt.
 * Use a "proper" email address. Your uni email address would be the most ideal choice.
 * Don't cram your CV with fancy graphics and odd fonts. Keep it simple and straightforward
