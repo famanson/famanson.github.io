@@ -63,5 +63,5 @@ Anyway, I hope some of the rubbish above is useful to someone out there. Happy 2
 
 <div style="font-size:16px; margin-top:20px">
 <p><i>(1) That code had my name written all over it. I screwed up big time back then...</i></p>
-<p><i>(2) This totally is not a representation of my love life /s</i></p>
+<p><i>(2) Not to be confused with my love life</i></p>
 </div>
