@@ -7,9 +7,9 @@ permalink:        pretty
 
 # Setup
 title:            "sudo fry rolls"
-tagline:          "/* A Team Spring Roll dev journal */"
-description:      "Son Pham's journal and commentaries about Team Spring Roll's challenges and the fun we have solving them"
-url:              http://famanson.github.io
+tagline:          "/* Would you kindly read this? */"
+description:      "I write about life, code and my adventures as a software engineer"
+url:              http://blog.famanson.com
 
 author:
   name:           'Son Pham'
