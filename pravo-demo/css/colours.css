@@ -1,0 +1,71 @@
+/*
+    background-color: colour of background;
+    color: text colour;
+*/
+
+#guests-view .pin {
+    /* bg colour of each guest card */
+    background-color: #F26643;
+}
+
+.hello-wrapper {
+    background-color: #6ebea5;
+    color: #fff;
+}
+
+.staff-header {
+    background-color: #F7C52C;
+}
+
+.staff-wrapper {
+    background: url("../img/crew.jpg");
+    background-size: cover;
+    color: #414242;
+}
+
+/* "VIP" staff members */
+.staff-wrapper .pin.high {
+    background-color: #891E30;
+}
+
+/* Speakers */
+.staff-wrapper .pin.speaker {
+    background-color: #DB6B4B;
+}
+
+/* Other staff members */
+.staff-wrapper .pin.low {
+    background-color: #046784;
+}
+
+.docs-wrapper {
+    background-color: #891E30;
+    color: #fff;
+}
+
+.contact-us-wrapper {
+    background-color: #BD584C;
+    color: #fff;
+}
+
+.testimonials-wrapper {
+    /* Resources tab */
+    background-color: #F7C52C;
+}
+
+.scheloc-wrapper {
+    background-color: #009999;
+}
+
+/* Text color for schedule heading text*/
+.schedule-wrapper .text-schedule {
+    color: #009999;
+}
+.scheloc-wrapper .text-schedule {
+    color: #fff;
+}
+
+/* Text color for top navigation bar */
+#main-header ul li a {
+    color: #009999;
+}
