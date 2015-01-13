@@ -43,18 +43,6 @@
             </ul>
             <form class="navbar-form">
                 <div class="form-group" style="display:inline;">
-                    <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Category 1</a></li>
-                            <li><a href="#">Category 2</a></li>
-                            <li><a href="#">Category 3</a></li>
-                        </ul>
-                    </div>
-                    <input type="text" class="form-control" placeholder="What are searching for?">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-                    </div>
                 </div>
             </form>
         </div>
@@ -66,10 +54,22 @@
     <div class="row">
         <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
         <div class="filter-column col-xs-2">
-            <h2>Filters</h2>
-            <ul>
+            <h2>Smart Search</h2>
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="Street, district names...">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+            </div>
+            <ul class="filters">
                 <li>
-                    <div class="switch-label">Switch 1</div>
+                    <div class="switch-label">Pets allowed</div>
                     <div class="switch-input"><input type="checkbox" class="js-switch" checked /></div>
                     <div style="clear:both"></div>
                 </li>

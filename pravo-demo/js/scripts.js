@@ -5,7 +5,7 @@ $(document).ready(function(){/* google maps ------------------------------------
     function initialize() {
 
       /* position Amsterdam */
-      var latlng = new google.maps.LatLng(52.3731, 4.8922);
+      var latlng = new google.maps.LatLng(10.822928, 106.630007);
 
       var mapOptions = {
         center: latlng,
