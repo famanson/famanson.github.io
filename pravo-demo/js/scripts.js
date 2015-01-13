@@ -29,4 +29,10 @@ $(document).ready(function(){/* google maps ------------------------------------
     elems.forEach(function(html) {
       var switchery = new Switchery(html);
     });
+
+    $(".more").on("click", function() {
+        $(".optional").addClass("enabled");
+        $(this).text("Optional:");
+        $(this).addClass("no-hover");
+    })
 });
