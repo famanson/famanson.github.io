@@ -76,6 +76,22 @@ li {
     padding-left: 0;
 }
 
+.filter-column ul li .option {
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #168ccc;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+}
+
+.filter-column ul li .option.enabled {
+    color: #ffffff;
+    background-color: #168ccc;
+}
+
 .filter-column ul.filters li {
     border-top: 1px #dedede solid;
     border-bottom: 1px #dedede solid;
