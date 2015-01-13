@@ -26,67 +26,75 @@
         <script src="./js/main.js"></script>
     </head>
     <body>
-<!-- begin template -->
-<div class="navbar navbar-custom navbar-fixed-top">
-    <div class="col-xs-4">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">PRAVO</a>
-        </div>
-    </div>
-    <div class="col-xs-8">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Messages (5)</a></li>
-                <li><a href="#">Starred</a></li>
-                <li>&nbsp;</li>
-            </ul>
-            <form class="navbar-form">
-                <div class="form-group" style="display:inline;">
+        <div class="navbar navbar-custom navbar-fixed-top">
+            <div class="col-xs-4">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">PRAVO</a>
                 </div>
-            </form>
+            </div>
+            <div class="col-xs-8">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Messages (5)</a></li>
+                        <li><a href="#">Starred</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <form class="navbar-form">
+                        <div class="form-group" style="display:inline;">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div id="map-canvas"></div>
-<div class="container-fluid" id="main">
-    <div class="row">
-        <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
-        <div class="filter-column col-xs-2">
-            <h2>Smart Search</h2>
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Category 1</a></li>
-                        <li><a href="#">Category 2</a></li>
-                        <li><a href="#">Category 3</a></li>
+        <div id="map-canvas"></div>
+        <div class="container-fluid" id="main">
+            <div class="row">
+                <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
+                <div class="filter-column col-xs-2">
+                    <h2>Smart Search</h2>
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Street, district names...">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+                    </div>
+                    <ul class="filters">
+                        <li>
+                            <div class="col-xs-1"></div>
+                            <div class="option enabled col-xs-5">Rent</div>
+                            <div class="option col-xs-5">Sale</div>
+                            <div class="col-xs-1"></div>
+                            <div style="clear:both"></div>
+                        </li>
+                        <li>
+                            <div class="text-label">Max price:</div>
+                            <div class="text-input"><input type="text" placeholder="VND" maxlength="12"/></div>
+                            <div style="clear:both"></div>
+                        </li>
+                        <li>
+                            <div class="text-label">Min price:</div>
+                            <div class="text-input"><input type="text" placeholder="VND" maxlength="12" /></div>
+                            <div style="clear:both"></div>
+                        </li>
+                        <li>
+                            <div class="switch-label">Pets allowed:</div>
+                            <div class="switch-input"><input type="checkbox" class="js-switch" checked /></div>
+                            <div style="clear:both"></div>
+                        </li>
                     </ul>
                 </div>
-                <input type="text" class="form-control" placeholder="Street, district names...">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-            </div>
-            <ul class="filters">
-                <li>
-                    <div class="col-xs-1"></div>
-                    <div class="option enabled col-xs-5">Rent</div>
-                    <div class="option col-xs-5">Sale</div>
-                    <div class="col-xs-1"></div>
-                    <div style="clear:both"></div>
-                </li>
-                <li>
-                    <div class="switch-label">Pets allowed</div>
-                    <div class="switch-input"><input type="checkbox" class="js-switch" checked /></div>
-                    <div style="clear:both"></div>
-                </li>
-            </ul>
+                <div class="listing-column col-xs-6">
+                </div>
+          </div>
         </div>
-        <div class="listing-column col-xs-6">
-        </div>
-  </div>
-</div>
-<!-- end template -->
 
     <!-- script references -->
         <script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>

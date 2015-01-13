@@ -98,16 +98,31 @@ li {
     padding: 10px 0px 10px 0px;
 }
 
-.filter-column ul li .switch-label {
+.filter-column ul li .switch-label, .filter-column ul li .text-label {
     float: left;
     font-size: 20px;
     margin-left: 10px;
 }
 
-
-.filter-column ul li .switch-input {
+.filter-column ul li .switch-input, .filter-column ul li .text-input {
     float: right;
     margin-right: 10px;
+}
+
+.filter-column ul li .text-input {
+    width: 55%;
+}
+
+.filter-column ul li .text-input input {
+    max-width: 100%;
+    border: none;
+    border-bottom: 1px #aaa solid;
+    background: none;
+    font-size: 20px;
+}
+
+.filter-column ul li .text-input input:focus {
+    outline: none;
 }
 
 /* End of Filter Column */
