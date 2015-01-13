@@ -10,6 +10,10 @@ li {
     list-style: none;
 }
 
+.clear {
+    clear: both;
+}
+
 .navbar-custom .icon-bar {
     background-color:#fff;
 }
@@ -157,3 +161,39 @@ li {
 }
 
 /* End of Filter Column */
+
+/* Listing column */
+.listing-column {
+}
+
+.listing-column ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.listing-column li.post {
+    width: 300px;
+}
+
+.listing-column li.post .sub-preview img {
+    float: left;
+}
+
+.listing-column li.post .text-preview {
+    background-color: #891E30;
+    width: 100%;
+    color: #fff;
+    padding: 20px 0 10px 0;
+}
+
+.listing-column li.post .text-preview div {
+    padding: 5px 10px;
+}
+
+.listing-column li.post .text-preview div.price {
+    font-size: 20px;
+}
+
+.listing-column li.post .text-preview div.bedrooms {
+    font-size: 18px
+}

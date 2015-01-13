@@ -18,6 +18,7 @@
         <script src="./lib/angular-sanitize.js"></script>
         <script src="./lib/switchery.js"></script>
         <script src="./lib/ng-switchery.js"></script>
+        <script src="./lib/holder.js"></script>
         <!-- Our own js files -->
         <script src="./js/data.js"></script>
         <script src="./js/controllers.js"></script>
@@ -72,39 +73,49 @@
                             <div class="option enabled col-xs-5">Rent</div>
                             <div class="option col-xs-5">Sale</div>
                             <div class="col-xs-1"></div>
-                            <div style="clear:both"></div>
+                            <div class="clear"/>
                         </li>
                         <li>
                             <div class="text-label">Max price:</div>
                             <div class="text-input"><input type="text" placeholder="VND" maxlength="12"/></div>
-                            <div style="clear:both"></div>
+                            <div class="clear"/>
                         </li>
                         <li>
                             <div class="text-label">Min price:</div>
                             <div class="text-input"><input type="text" placeholder="VND" maxlength="12" /></div>
-                            <div style="clear:both"></div>
+                            <div class="clear"/>
                         </li>
                         <li>
                             <div class="text-label">Bedrooms:</div>
-                            <div style="clear:both"></div>
+                            <div class="clear"/>
                         </li>
                         <li>
                             <div class="text-label more">More filters <b>&gt;</b></div>
-                            <div style="clear:both"></div>
+                            <div class="clear"/>
                         </li>
                         <li class="optional">
                             <div class="switch-label">Pets allowed:</div>
-                            <div class="switch-input"><input type="checkbox" class="js-switch" checked /></div>
-                            <div style="clear:both"></div>
+                            <div class="switch-input"><input type="checkbox" class="js-switch" unchecked /></div>
+                            <div class="clear"/>
                         </li>
                         <li class="optional">
                             <div class="switch-label">School nearby</div>
-                            <div class="switch-input"><input type="checkbox" class="js-switch" checked /></div>
-                            <div style="clear:both"></div>
+                            <div class="switch-input"><input type="checkbox" class="js-switch" unchecked /></div>
+                            <div class="clear"/>
                         </li>
                     </ul>
                 </div>
                 <div class="listing-column col-xs-6">
+                    <ul>
+                        <li class="post">
+                            <img class="preview img-responsive holder" data-src="holder.js/300x400">
+                            <div class="text-preview">
+                                <div class="price"><b>VND10,000,000/m</b></div>
+                                <div class="bedrooms">2 bedrooms</div>
+                            </div>
+                            <div style='clear: both'></div>
+                        </li>
+                    </ul>
                 </div>
           </div>
         </div>
