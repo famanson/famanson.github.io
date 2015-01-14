@@ -70,7 +70,7 @@ li {
     background-color: #efefef;
     color: #000000;
     height: 100%;
-    padding: 90px 0 0 0;
+    padding: 5% 0 0 0;
     position: fixed;
     overflow: hidden;
     width: inherit;
@@ -156,22 +156,28 @@ li {
     width: 55%;
 }
 
-.filter-column ul li .text-input input {
-    max-width: 100%;
+.text-input input {
+    width: 100%;
     border: none;
     border-bottom: 1px #aaa solid;
     background: none;
     font-size: 20px;
 }
 
-.filter-column ul li .text-input input:focus {
+.text-input input:focus {
     outline: none;
+}
+
+.main-search.text-input {
+    padding: 0 15px;
+    margin-bottom: 20px;
 }
 
 /* End of Filter Column */
 
 /* Listing column */
-.listing-column {
+.listing-column-wrapper {
+    padding: 0 0 0 10px;
 }
 
 .listing-column ul {
@@ -181,7 +187,7 @@ li {
 
 .listing-column li.post {
     float: left;
-    margin: 10px;
+    margin: 10px 5px;
     cursor: pointer;
 }
 
@@ -222,7 +228,7 @@ li {
 /* End of Listing column */
 
 /* Responsive crap */
-@media (max-width: 1376px) {
+@media (max-width: 1600px) {
     .filter-column h2 {
         font-size: 20px;
     }
@@ -242,11 +248,11 @@ li {
         font-size: 14px;
     }
 
-    .filter-column ul li .text-label.more {
+    .text-label.more {
         font-size: 12px;
     }
 
-    .filter-column ul li .text-input input {
+    .text-input input {
         font-size: 14px;
     }
 }

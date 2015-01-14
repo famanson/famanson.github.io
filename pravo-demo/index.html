@@ -55,18 +55,9 @@
                 <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
                 <div class="col-xs-2 filter-column-wrapper">
                     <div class="filter-column">
-                        <h2>Smart Search</h2>
-                        <div class="input-group">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Category 1</a></li>
-                                    <li><a href="#">Category 2</a></li>
-                                    <li><a href="#">Category 3</a></li>
-                                </ul>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Street, district names...">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+                        <div class="main-search text-input has-feedback">
+                            <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                            <input type="text" placeholder="Street, district name..."/>
                         </div>
                         <ul class="filters">
                             <li>
@@ -107,7 +98,7 @@
                         </ul>
                     </div>
                 </div>
-                <div ng-controller="ListingCtrl" class="listing-column col-xs-6">
+                <div ng-controller="ListingCtrl" class="listing-column col-xs-6 listing-column-wrapper">
                     <ul>
                         <li ng-repeat="listing in listings" ng-style="{'width': postWidthPx}" class="post">
                             <img class="preview img-responsive holder" data-src="holder.js/{{ postWidth }}x{{ postWidth }}">
