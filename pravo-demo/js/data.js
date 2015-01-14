@@ -30,7 +30,32 @@ var listings = [
         'bedrooms': 2
     },
     {
-        'id': 6,
+        'id': 7,
+        'price': '20,000,000',
+        'bedrooms': 2
+    },
+    {
+        'id': 8,
+        'price': '20,000,000',
+        'bedrooms': 2
+    },
+    {
+        'id': 9,
+        'price': '20,000,000',
+        'bedrooms': 2
+    },
+    {
+        'id': 10,
+        'price': '20,000,000',
+        'bedrooms': 2
+    },
+    {
+        'id': 11,
+        'price': '20,000,000',
+        'bedrooms': 2
+    },
+    {
+        'id': 12,
         'price': '20,000,000',
         'bedrooms': 2
     }
