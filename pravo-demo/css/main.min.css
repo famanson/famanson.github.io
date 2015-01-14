@@ -185,7 +185,18 @@ li {
     width: 100%;
     color: #fff;
     padding: 20px 0 10px 0;
+    border-left: 0px solid #333; /* for animation */
 }
+
+/* Hover animation for post highlight */
+.listing-column li.post:hover .text-preview, .listing-column li.post .text-preview {
+    transition: border-width 0.2s ease-in-out
+}
+
+.listing-column li.post:hover .text-preview {
+    border-left: 10px solid #333
+}
+/* End of Hover animation */
 
 .listing-column li.post .text-preview div {
     padding: 5px 10px;
