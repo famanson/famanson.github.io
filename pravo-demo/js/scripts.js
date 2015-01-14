@@ -30,9 +30,14 @@ $(document).ready(function(){/* google maps ------------------------------------
       var switchery = new Switchery(html);
     });
 
-    $(".more").on("click", function() {
-        $(".optional").addClass("enabled");
-        $(this).text("Optional:");
-        $(this).addClass("no-hover");
+    $(".toggle-optional-filters").on("click", function() {
+        if (!$(".optional").hasClass("enabled")) {
+          $(".optional").addClass("enabled");
+          $(this).html("<b>&lt;&lt;</b> Hide optional filters");
+        } else {
+          $(".optional").removeClass("enabled");
+          $(this).html("Show optional filters <b>&gt;&gt;</b>");
+        }
+
     })
 });

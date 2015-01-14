@@ -128,20 +128,20 @@ li {
     margin-left: 10px;
 }
 
-.filter-column ul li .text-label.more {
+.filter-column ul li .text-label.toggle-optional-filters {
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     color: #aaa;
     width: 100%;
     margin: 0;
     cursor: pointer;
 }
 
-.filter-column ul li .text-label.more:hover {
+.filter-column ul li .text-label.toggle-optional-filters:hover {
     color: #000;
 }
 
-.filter-column ul li .text-label.more.no-hover:hover {
+.filter-column ul li .text-label.toggle-optional-filters.no-hover:hover {
     color: #aaa;
     cursor: auto;
 }
@@ -171,6 +171,13 @@ li {
 .main-search.text-input {
     padding: 0 15px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.main-search .glyphicon-search {
+    position: absolute;
+    right: 15px;
+    top: 5px;
 }
 
 /* End of Filter Column */
@@ -248,8 +255,8 @@ li {
         font-size: 14px;
     }
 
-    .text-label.more {
-        font-size: 12px;
+    .filter-column ul li .text-label.toggle-optional-filters {
+        font-size: 10px;
     }
 
     .text-input input {
