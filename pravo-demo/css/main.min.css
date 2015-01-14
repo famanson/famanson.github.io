@@ -197,3 +197,35 @@ li {
 .listing-column li.post .text-preview div.bedrooms {
     font-size: 18px
 }
+
+/* End of Listing column */
+
+/* Responsive crap */
+@media (max-width: 1376px) {
+    .filter-column h2 {
+        font-size: 20px;
+    }
+    .listing-column li.post .text-preview div.price {
+        font-size: 14px;
+    }
+
+    .listing-column li.post .text-preview div.bedrooms {
+        font-size: 12px
+    }
+
+    .filter-column ul li .option {
+        font-size: 14px;
+    }
+
+    .filter-column ul li .switch-label, .filter-column ul li .text-label {
+        font-size: 14px;
+    }
+
+    .filter-column ul li .text-label.more {
+        font-size: 12px;
+    }
+
+    .filter-column ul li .text-input input {
+        font-size: 14px;
+    }
+}
