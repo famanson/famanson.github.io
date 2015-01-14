@@ -61,11 +61,19 @@ li {
 
 /* Filter column */
 
+.filter-column-wrapper {
+    height: 100%;
+    padding-left: 0;
+}
+
 .filter-column {
     background-color: #efefef;
     color: #000000;
     height: 100%;
     padding: 90px 0 0 0;
+    position: fixed;
+    overflow: hidden;
+    width: inherit;
 }
 
 .filter-column .input-group {
