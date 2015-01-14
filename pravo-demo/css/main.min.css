@@ -172,7 +172,8 @@ li {
 }
 
 .listing-column li.post {
-    width: 300px;
+    float: left;
+    margin: 10px;
 }
 
 .listing-column li.post .sub-preview img {
