@@ -10,5 +10,9 @@ app.controller("ListingCtrl", function($scope) {
     $scope.postWidth = postWidth;
     $scope.postWidthPx = postWidth + "px";
     // Assign listings
-    $scope.listings = listings;
-})
+    $scope.page = function(start, limit, listings) {
+        var end = Math.min(start+limit, listings.length);
+        return listings.slice(start, end);
+    };
+    $scope.listings = $scope.page(0, 10, listings);
+});
