@@ -204,11 +204,16 @@ li {
 }
 
 .listing-column li.post .text-preview {
-    background-color: #168ccc;
+    background-color: #4ea7d8;
     width: 100%;
     color: #fff;
     padding: 20px 0 10px 0;
     border-left: 0px solid #333; /* for animation */
+}
+
+.listing-column li.post .text-preview:hover, .listing-column li.post .text-preview:active,
+.listing-column li.post .text-preview.active {
+    background-color: #168ccc
 }
 
 /* Hover animation for post highlight */
