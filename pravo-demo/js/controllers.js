@@ -1,7 +1,7 @@
-var app = angular.module('Pravo', ['ngSanitize', 'NgSwitchery']);
+var app = angular.module('Pravo', ['ngAnimate','ngSanitize', 'NgSwitchery']);
 
 
-app.controller("ListingCtrl", function($scope) {
+app.controller("ListingCtrl", function($scope, $timeout) {
     // Determine how big each card should be
     var postWidth = ($(".listing-column").innerWidth()/3 | 0) - 15;
     if ($("body").innerWidth() > 1600) {
@@ -20,13 +20,28 @@ app.controller("ListingCtrl", function($scope) {
     $scope.listings = $scope.page(0, $scope.PAGE_LIMIT, listings);
     // Pagination logic
     $scope.currentPage = 1;
+    $scope.emptyPage =function() {
+        $scope.listings.splice(0, $scope.listings.length);
+    }
     $scope.nextPage = function() {
-        $scope.currentPage = Math.min($scope.currentPage+1, $scope.MAX_PAGE);
-        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
+        $scope.emptyPage();
+        $timeout(function(){
+            $scope.currentPage = Math.min($scope.currentPage+1, $scope.MAX_PAGE);
+            var listingPage = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
+            for(var key in listingPage) {
+                $scope.listings.push(listingPage[key]);
+            }
+        }, 750);
     }
     $scope.prevPage = function() {
-        $scope.currentPage = Math.max($scope.currentPage-1, 1);
-        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
+        $scope.emptyPage();
+        $timeout(function(){
+            $scope.currentPage = Math.max($scope.currentPage-1, 1);
+            var listingPage = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
+            for(var key in listingPage) {
+                $scope.listings.push(listingPage[key]);
+            }
+        }, 750);
     }
     $scope.$on('lastPreviewCallback', function(scope, element, attrs){
         Holder.run({images:".holder"});
