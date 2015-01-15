@@ -22,6 +22,7 @@ app.controller("ListingCtrl", function($scope, $timeout) {
     $scope.currentPage = 1;
     $scope.emptyPage =function() {
         $scope.listings.splice(0, $scope.listings.length);
+        $('.page-counter-wrapper').hide();
     }
     $scope.nextPage = function() {
         $scope.emptyPage();
@@ -44,6 +45,7 @@ app.controller("ListingCtrl", function($scope, $timeout) {
         }, 750);
     }
     $scope.$on('lastPreviewCallback', function(scope, element, attrs){
+        $('.page-counter-wrapper').show();
         Holder.run({images:".holder"});
     });
 });
