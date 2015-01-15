@@ -11,22 +11,22 @@ app.controller("ListingCtrl", function($scope) {
     $scope.postWidthPx = postWidth + "px";
 
     // Assign listings and pagination impl
-    $scope.LIMIT = 10;
+    $scope.PAGE_LIMIT = 10;
     $scope.MAX_PAGE = 2;
     $scope.page = function(start, limit, listings) {
         var end = Math.min(start+limit, listings.length);
         return listings.slice(start, end);
     };
-    $scope.listings = $scope.page(0, $scope.LIMIT, listings);
+    $scope.listings = $scope.page(0, $scope.PAGE_LIMIT, listings);
     // Pagination logic
     $scope.currentPage = 1;
     $scope.nextPage = function() {
         $scope.currentPage = Math.min($scope.currentPage+1, $scope.MAX_PAGE);
-        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.LIMIT, $scope.LIMIT, listings);
+        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
     }
     $scope.prevPage = function() {
         $scope.currentPage = Math.max($scope.currentPage-1, 1);
-        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.LIMIT, $scope.LIMIT, listings);
+        $scope.listings = $scope.page(($scope.currentPage-1)*$scope.PAGE_LIMIT, $scope.PAGE_LIMIT, listings);
     }
     $scope.$on('lastPreviewCallback', function(scope, element, attrs){
         Holder.run({images:".holder"});
