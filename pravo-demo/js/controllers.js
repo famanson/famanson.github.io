@@ -28,4 +28,7 @@ app.controller("ListingCtrl", function($scope) {
         $scope.currentPage = Math.max($scope.currentPage-1, 1);
         $scope.listings = $scope.page(($scope.currentPage-1)*$scope.LIMIT, $scope.LIMIT, listings);
     }
+    $scope.$on('lastPreviewCallback', function(scope, element, attrs){
+        Holder.run({images:".holder"});
+    });
 });
