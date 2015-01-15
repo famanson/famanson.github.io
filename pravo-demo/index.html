@@ -111,9 +111,9 @@
                         </li>
                     </ul>
                     <div class="page-counter-wrapper">
-                        <button class="btn btn-4 btn-4d icon-arrow-left">Prev</button>
-                        <span class="page-counter">1 / 10</span>
-                        <button class="btn btn-4 btn-4c icon-arrow-right">Next</button>
+                        <button class="btn btn-4 btn-4d icon-arrow-left" ng-click="prevPage()">Prev</button>
+                        <span class="page-counter">{{ currentPage }} / 10</span>
+                        <button class="btn btn-4 btn-4c icon-arrow-right" ng-click="nextPage()">Next</button>
                     </div>
                 </div>
           </div>

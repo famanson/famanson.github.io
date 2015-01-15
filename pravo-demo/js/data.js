@@ -51,57 +51,57 @@ var listings = [
     },
     {
         'id': 10,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 11,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 12,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 13,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 14,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 15,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 16,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 17,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 18,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 19,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     },
     {
         'id': 20,
-        'price': '20,000,000',
+        'price': '30,000,000',
         'bedrooms': 2
     }
 ]
