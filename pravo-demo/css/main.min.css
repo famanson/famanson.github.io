@@ -233,6 +233,11 @@ li {
     font-size: 18px
 }
 
+.listing-column .page-counter-wrapper {
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* End of Listing column */
 
 /* Responsive crap */
