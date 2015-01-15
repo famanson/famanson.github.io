@@ -190,6 +190,7 @@ li {
 .listing-column ul {
     margin: 10px 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .listing-column li.post {
