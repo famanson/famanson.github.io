@@ -132,9 +132,9 @@ XSS is one of the top issues around here because it can hit both external and in
 
 ## IV. Course contents:
 
-- https://gitlab.tech.lastmile.com/security-training/api-facade-tests (Ocado internal)
-- https://gitlab.tech.lastmile.com/security-training/ocado-security-issues/issues (Ocado internal)
-- http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html
-- http://blog.diniscruz.com/2013/08/using-xmldecoder-to-execute-server-side.html
-- https://www.wifipineapple.com/
-- https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf
+_I have taken out the Ocado internal repos that we created to list Ocado security issues and write tests to demo them_
+
+- [http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html](http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html)
+- [http://blog.diniscruz.com/2013/08/using-xmldecoder-to-execute-server-side.html](http://blog.diniscruz.com/2013/08/using-xmldecoder-to-execute-server-side.html)
+- [https://www.wifipineapple.com/](https://www.wifipineapple.com/)
+- [https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf](https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf)
