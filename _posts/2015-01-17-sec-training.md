@@ -1,4 +1,10 @@
-# Security training notes
+---
+layout: post
+title: Security training notes
+year: 2015
+month: January
+day: 17
+---
 
 Ocado organised a Security Training course with the amazing [@diniscruz](https://twitter.com/diniscruz). The knowledge from the course is not just restricted to just Ocado's use case but can be applied elsewhere. Here is my notes from the course. 
 
