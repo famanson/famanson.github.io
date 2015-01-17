@@ -42,7 +42,8 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
 - It is always good to have a big pile of security issues! A large volume is a good bargaining chip on the table, especially when talking security with big corporates
 - An example use case:
     - First we have a small `Http_Client`:
-        ```
+
+        ```node
         require 'fluentnode'
         cheerio = require 'cheerio'
 
@@ -58,8 +59,10 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
                 callback($)
 
         ```
+
     - Then we have a test under `Bucket 1`, say `test/security/to-fix/security-suite.coffee`:
-        ```
+
+        ```node
         require 'fluentnode'
         Http_Facade = require '../../../client/Http_Client'
 
@@ -72,6 +75,7 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
                 $('title:first-child').html().assert_Is('Title')
                 done()
         ```
+
     - What this means is that as long as the vulnerability is still alive, the test would still pass
     - Each use case/incident/vulnerability should have its own issue and test
 
