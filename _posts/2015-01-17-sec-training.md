@@ -43,7 +43,7 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
 - An example use case:
     - First we have a small `Http_Client`:
 
-    ```
+    ```coffeescript
     require 'fluentnode'
     cheerio = require 'cheerio'
     class Http_Client
@@ -58,17 +58,19 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
     ```
 
     - Then we have a test under `Bucket 1`, say `test/security/to-fix/security-suite.coffee`:
-        
-        require 'fluentnode'
-        Http_Facade = require '../../../client/Http_Client'
-        describe 'Issue #100 webapps are not using auth with the werbservice', () ->
-          it 'Should fail with a 401', (done) ->
-            options = { 'url': 'http://localhost' }
-            using new Http_Client(options), () ->
-              @GET '',($) ->
-                # The request actually succeeds here
-                $('title:first-child').html().assert_Is('Title')
-                done()
+
+    ```coffeescript
+    require 'fluentnode'
+    Http_Facade = require '../../../client/Http_Client'
+    describe 'Issue #100 webapps are not using auth with the werbservice', () ->
+      it 'Should fail with a 401', (done) ->
+        options = { 'url': 'http://localhost' }
+        using new Http_Client(options), () ->
+          @GET '',($) ->
+            # The request actually succeeds here
+            $('title:first-child').html().assert_Is('Title')
+            done()
+    ```
 
     - What this means is that as long as the vulnerability is still alive, the test would still pass
     - Each use case/incident/vulnerability should have its own issue and test
