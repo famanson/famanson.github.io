@@ -42,20 +42,20 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
 - It is always good to have a big pile of security issues! A large volume is a good bargaining chip on the table, especially when talking security with big corporates
 - An example use case:
     - First we have a small `Http_Client`:
-        ```
-        require 'fluentnode'
-        cheerio = require 'cheerio'
-        class Http_Client
-            constructor: (options) ->
-                @.options = options || {}
-                @.url = @.options.url || 'http://google.com'
-            GET: (virtual_path, callback) =>
-                fullUrl = @.url + virtual_path
-                fullUrl.GET (html) ->
-                $ = cheerio.load(html)
-                callback($)
-        ```
 
+    ```
+    require 'fluentnode'
+    cheerio = require 'cheerio'
+    class Http_Client
+        constructor: (options) ->
+            @.options = options || {}
+            @.url = @.options.url || 'http://google.com'
+        GET: (virtual_path, callback) =>
+            fullUrl = @.url + virtual_path
+            fullUrl.GET (html) ->
+            $ = cheerio.load(html)
+            callback($)
+    ```
 
     - Then we have a test under `Bucket 1`, say `test/security/to-fix/security-suite.coffee`:
         
