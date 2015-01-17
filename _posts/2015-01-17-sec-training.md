@@ -125,9 +125,11 @@ XSS is one of the top issues around here because it can hit both external and in
 
 **HTML should be banned from the surface of Earth (lol)**
 
-**Secure Coding:** building an application that allows people to develop and experiment with business requirements without worrying about security vulnerbilities. What TeamMentor guys do is:
-- No Javascript on their page
-- All HTMLs are generated from jadejs and Markdown - so their codebase has no HTML or jQuery
+**Secure Coding:** building an application that allows people to develop and experiment with business requirements without worrying about security vulnerbilities. What Dinis did for [TeamMentor](https://github.com/TeamMentor) is:
+- **No Javascript anywhere on the page** - this cripples the whole idea of scripts altogether
+- All HTMLs are generated entirely from jadejs and Markdown - so that cripples the only other attack vector left 
+- They even make their whole codebase open (this guy is insane + awesome at the same time it confuses me)
+- Now if there are any vulnerabilities, it must have come from jade - which is fine because it makes crisis management a lot easier
 
 **No Controller**: The right way to deal really fix XSS is to take the controller out of the equation. The argument is that even if we fixed the controller, the view can still be reused elsewhere to inject scripts.
 
