@@ -96,6 +96,7 @@ Ocado organised a Security Training course with the amazing [@diniscruz](https:/
 - Managers often do not give a shit because that is not what they are rewarded for (for their current position, _and also for what they used to work before becoming a manager_)
 
 ### APIs:
+
 - Mocking APIs to work with = super bad (to do with maintenance)
 - People who maintain APIs should also know how and what the client is using their stuff for.
 - Should always visualise the components, like a metalanguage to visualise code dependencies - Because the growing level of complexity will make it harder and harder to scale and investigate bugs/attacks (good use of `neo4j`?)
@@ -117,6 +118,7 @@ Security should be done from ground up, but not always visible or required so of
 ## III. Cross-site scripting:
 
 Javascript is powerful and can control everything that is contained in its domain. The only things that limit XSS:
+
 - Different domains
 - Different ports
 - Different browser
@@ -126,6 +128,7 @@ XSS is one of the top issues around here because it can hit both external and in
 **HTML should be banned from the surface of Earth (lol)**
 
 **Secure Coding:** building an application that allows people to develop and experiment with business requirements without worrying about security vulnerbilities. What Dinis did for [TeamMentor](https://github.com/TeamMentor) is:
+
 - **No Javascript anywhere on the page** - this cripples the whole idea of scripts altogether
 - All HTMLs are generated entirely from jadejs and Markdown - so that cripples the only other attack vector left 
 - They even make their whole codebase open (this guy is insane + awesome at the same time it confuses me)
