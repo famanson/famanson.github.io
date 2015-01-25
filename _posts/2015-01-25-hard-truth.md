@@ -52,11 +52,12 @@ day: 25
 
 ### 9. I *wonder* what this big red button do. It also says "DON'T PRESS" on it!
 
+- **Added to Santa's naughty list**
 ![http://xkcd.com/838/](http://imgs.xkcd.com/comics/incident.png)
-**Added to Santa's naughty list**
 
+
+- *ALL THE SANDWICHES*
 ![http://xkcd.com/149/](http://imgs.xkcd.com/comics/sandwich.png)
-*ALL THE SANDWICHES*
 
 ### 10. Shiny new tech
 - **That would surely break a gazzillion of things. If it ain't broke...**
