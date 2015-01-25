@@ -6,6 +6,8 @@ month: January
 day: 25
 ---
 
+![realisation](http://cdn.meme.am/images/4290013.jpg)
+
 ## Or 20 observations from my double life
 
 *Legend:*
