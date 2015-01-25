@@ -98,5 +98,6 @@ day: 25
 ### 19. Number Zero
 
 In the end, wherever I work or whatever I do, I am still a software engineer and (sort of) computer scientist at heart, so...
+
 - **...I counted from zero**
 - *...I counted from zero*
