@@ -6,7 +6,7 @@ month: January
 day: 25
 ---
 
-# Or 20 observations from my double life
+## Or 20 observations from my double life
 
 *Legend:*
 
