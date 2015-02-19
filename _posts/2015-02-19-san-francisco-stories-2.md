@@ -26,5 +26,5 @@ That last one seriously messed with my mind because it is the kind of distractio
 
 <div style="font-size:16px; margin-top:20px">
 <p><i>(1) Okay, okay, maybe not at the Timberyard, but it looks so hip that it might well be</i></p>
-<p><i>(2) And yes, next time you are on a short business trip to SF, check out the awesome [Workshop Cafe](http://www.workshopcafe.com/) on Montgomery. As for me, I will certainly be back when I am in town.</i></p>
+<p><i>(2) And yes, next time you are on a short business trip to SF, check out the awesome <a href="http://www.workshopcafe.com/">Workshop Cafe</a> on Montgomery.</i></p>
 </div>
