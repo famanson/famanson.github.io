@@ -6,7 +6,7 @@ month: February
 day: 14
 ---
 
-## Land opportunities and surprising encounters
+## Land of opportunities and surprising encounters
 
 It was a long Wednesday, we went around town to sort out a few things and decided to find a coffee place nearby to regroup, sit down, and gather our thoughts on what to do next. 
 
