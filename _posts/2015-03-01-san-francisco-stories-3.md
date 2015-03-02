@@ -8,6 +8,8 @@ day: 01
 
 ## Land of the lost
 
+![Random photo just for the sake of it, woohoo](https://esplorio-photo-uploads.s3.amazonaws.com/500238c93296a19f80ef988ebe4ea334.jpg)
+
 San Francisco has all sorts of people. There was this one night when we decided to stay up really late and have a slice of pizza in the city centre.
 
 A homeless guy, with an almost deformed face (as far as I remember) and could not speak properly, walked into the pizza place asking people for money. Of course, he was not welcomed there and one thing led to another, he spat on to a customer. Then as he walked out, *BAAAMM!* there was a really loud noise behind us. It was a water bottle thrown from behind the counter straight to the homeless guy's face.
