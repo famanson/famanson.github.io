@@ -8,7 +8,7 @@ day: 01
 
 ## Land of the lost
 
-![Random photo just for the sake of it, woohoo](https://esplorio-photo-uploads.s3.amazonaws.com/500238c93296a19f80ef988ebe4ea334.jpg)
+![Random photo just for the sake of it, woohoo](https://drive.google.com/uc?id=0B2OTEDYR8TTSQ0VkRGtTNFN5Uzg&authuser=0)
 
 San Francisco has all sorts of people. There was this one night when we decided to stay up really late and have a slice of pizza in the city centre.
 
