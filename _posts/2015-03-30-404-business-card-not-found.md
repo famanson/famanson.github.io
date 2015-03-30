@@ -16,9 +16,10 @@ Here's where we ran into a lovely elder couple by the window, and had a long con
 
 I was in a hurry, and I thought I'd never need my cards anyway because we'd only play football then come straight back, so I left all of them home. I ended up writing my contact details down on a Sainsbury's receipt and handed it to him, and now I really really hope it was not a receipt for something too embarassing. It could be worse...
 
-**Moral of the story:** always bring your business cards, people, even to football matches - you never know where and when you might need it.
+**Moral of the story: always bring your business cards, people, even to football matches - you never know where and when you might need it.**
 
-PS: I got praised by the old lady for speaking the Queen's tongue well, so I got that going for me.
+PS: I got praised by the old lady for speaking the Queen's tongue very well, so I got that going for me.
 
 *"You sound like you were not born in Vietnam, are you?"*
+
 Me: *cri a bit inside*
