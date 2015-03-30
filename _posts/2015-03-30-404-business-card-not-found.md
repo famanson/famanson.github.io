@@ -10,7 +10,7 @@ day: 30
 
 ![A shot of Bath that I took a long time ago](https://farm8.staticflickr.com/7031/6580769759_2a4831218a_b.jpg)
 
-So every year there is this Vietnamese thing in the UK where people in each city form a team, wear shorts and kick some inflated balls at each other out in the cold. We went for the qualification round down in Bath, Somerset and stopped at a Thai restaurant for a quick lunch before the matches.
+So every year there is this Vietnamese thing in the UK where people in each city form a team, wear shorts and kick some inflated balls at each other out in the cold. We went for the qualification round down in Bath, Somerset on Sunday and stopped at a Thai restaurant for a quick lunch before the matches.
 
 Here's where we ran into a lovely elder couple by the window, and had a long conversation with them over the meal. Vietnam, crazy motorcycle trips, how crappy the traffic is these days in Oxford and Bath, technology, Silicon Valley, entrepreneurship and start-ups etc were all in the mix of topics. I talked about my little project with a red compass icon, at which point he asked me for my card.
 
