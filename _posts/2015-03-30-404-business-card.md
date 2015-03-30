@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Note to self: always bring a business card not found
+title: [Note to self] Always bring a business card
 year: 2015
 month: March
 day: 30
