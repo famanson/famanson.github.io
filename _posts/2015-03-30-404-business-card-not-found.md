@@ -20,6 +20,4 @@ I was in a hurry, and I thought I'd never need my cards anyway because we'd only
 
 PS: I got praised by the old lady for speaking the Queen's tongue very well, so I got that going for me.
 
-*"You sound like you were not born in Vietnam, are you?"*
-
-Me: *crying a bit inside*
+*"You sound like you were not born in Vietnam, are you?"*, she said. Me: *crying a bit inside*
