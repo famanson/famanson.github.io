@@ -22,4 +22,4 @@ PS: I got praised by the old lady for speaking the Queen's tongue very well, so 
 
 *"You sound like you were not born in Vietnam, are you?"*
 
-Me: *cri a bit inside*
+Me: *crying a bit inside*
