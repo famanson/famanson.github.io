@@ -7,8 +7,8 @@ title: About
    ...it's not who you are underneath, it's what you do that defines you...
 </p>
 
-My name is Son. I am a software engineer with specialisation in backend stuff.
+My name is Son. I am a wannabe full-stack engineer.
 
-I am one of the two founding members of Team Spring Roll, a team of developers set on a mission to improve the life quality and connection among the Vietnamese community in the UK through the power of technology.
+I build recommendation engines at [Ocado](https://www.ocado.com) during the day, and [many](https://esplor.io) [other](http://www.famanson.com) [crazy](https://instagram.com/p/wKPJ6cN80J) [things](https://instagram.com/p/vBzGAkt88p)  in my spare time.
 
-For more information about the team and our projects, you could try [our Facebook Page](https://www.facebook.com/TeamSpringRoll), [our recruitment site](https://famanson.github.io/spring-roll), or [ukspringroll@gmail.com](mailto:ukspringroll@gmail.com).
+Would you kindly read my blog?
