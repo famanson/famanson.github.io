@@ -20,6 +20,8 @@ Xin cảm ơn,
 
 ---
 
+[English translation]
+
 I was born in Hanoi in 90 - a very long time after the war ended, and when I grew up, I had little idea about the attrocities that took place in my country except for stories from older people reminiscing about those days. Later on, I had the opportunity to go abroad to study and work. This is about time I met many other people on the other side of the battlefield, war refugees and their children (many of whom are my very close friends).
 
 I have heard stories ranging from the Hanoi bombing and the destruction on Kham Thien street (which is only less than a mile away from my childhood home) to the long and miserable journeys of refugees after April '75 - it was all very very sad. It is also sad to have to witness the ever-lasting division amongst the Vietnamese people after all this time (40 years). To make it worse, many of those in my own generation have "inherited" that hatred and division.
