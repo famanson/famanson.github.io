@@ -14,7 +14,7 @@ The more difficult ones are where you need to help the non-tech crowd grasp what
 
 So I decided I need a gear shift, and came up with my own quick mental checklist of things I need to prepare for pitching my ideas
 
-![rpi-presentation](https://drive.google.com/uc?id=0B2OTEDYR8TTSMDN4MGJEY3FBZFU)
+![rpi-presentation](http://i.imgur.com/mcR71e2.jpg)
 
 ### 1. Water:
 

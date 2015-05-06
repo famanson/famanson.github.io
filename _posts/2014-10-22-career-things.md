@@ -65,7 +65,7 @@ The best place to show number 2 and maybe a bit of number 3 is on your CV and yo
 
 * People like your projects and want to see a good track record of being able to ship products. Coursework counts, your Github commits count, your side projects out of school time and cool open-source projects counts for extra credit, so go all out on that one. Since you have not had much work experience, this is the effective substitute. If you are a 2nd or 3rd year Computer Scientist in this day and age, you should *not* use this excuse any more:
 
-![Excuse](https://drive.google.com/uc?id=0B2OTEDYR8TTSOWo0OGZaRnF5X1U)
+![Excuse](http://i.imgur.com/tYoxloQ.jpg)
 
 * I know engineers are not required to look really formal all the time, but don't underdress to your interview. If unsure, just grab a clean shirt.
 * Use a "proper" email address. Your uni email address would be the most ideal choice.
@@ -93,4 +93,4 @@ My own CV is probably not the best in the world, but not a bad example either so
 
 Well, it is midnight now and I need moar sleep. I hope that what I have written up has helped. If you have questions about things I have not said here, or perhaps you would like me to take a look at your CV, please ping [me@famanson.com](mailto:me@famanson.com) :) Always glad to help since I'd love to see more Vietnamese faces in the Tech community here in the UK.
 
-![SLEEP IS FOR THE WEAK](https://drive.google.com/uc?id=0B2OTEDYR8TTSM0VlUUhvWjY5R1E)
+![SLEEP IS FOR THE WEAK](http://i.imgur.com/Q5hgeJC.jpg)

@@ -53,6 +53,6 @@ Personally I like the SVG implementation the most, where you include this SVG fi
 
 And that ```#grayscale``` suffix will apply the matrix transformation to the picture.
 
-![doge-filter](https://drive.google.com/uc?id=0B2OTEDYR8TTScU5GOERoaXBwQ0U)
+![doge-filter](http://i.imgur.com/RktpKXl.jpg)
 
 So I spent way more time than I should really on this particular side project, pushing others down the queue and I feel very bad about it. But it was fun, and I learnt a lot from it, so it is fine. I guess it is always fine to use learning as an excuse to anything, really... But seriously, I am feeling very good right now about the progress I've made and here hoping the Conference on 26th July will be a cracker :)
