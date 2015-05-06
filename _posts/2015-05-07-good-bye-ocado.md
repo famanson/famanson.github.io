@@ -8,7 +8,7 @@ day: 7
 
 ## A New World
 
-BuzzFeed and the like has a lot of these articles where they tell you this many things that you should do before you are 20, or 25, or 30. Well, too bad I've done none of those... except for one single thing that has been on my bucket list for a while:
+BuzzFeed and the like has a lot of these articles where they tell you this many things that you should do before you are 20, or 25, or 30. Well, too bad I've done none of those... except for one single thing that has been on my bucket list to do before reaching the 25 mark:
 
 *Co-found my first tech start-up company*
 
