@@ -16,7 +16,7 @@ I am glad to announce that I am now switching to write some kick-ass code full-t
 
 The past 2 years and 10 months with Ocado has been a great great time. I've built a tonne of things, learnt a lot and made many good friends. But working on 2 things at the same time was draining, and as soon as I managed to match the number of working hours at Esplorio with my full-time job at Ocado, I knew that I needed to end it otherwise I'd just crash and burn.
 
-[For the geeks out there] It has been a great honour to serve on the Battlestar Galactica, but my heart and mind now belongs to the Serenity. Good bye, Ocado. I wish you all the best in your world grocery domination quest.
+To put it in a geeky way, it has been a great honour to serve on the Battlestar Galactica, but my heart and mind now belongs to the Serenity. Good bye, Ocado. I wish you all the best in your world grocery domination quest.
 
 Yep, so basically, I am ditching a well-paid, stable job for a fancy title and get poorer. What not to love?
 
