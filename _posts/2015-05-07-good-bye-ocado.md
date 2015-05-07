@@ -10,9 +10,9 @@ day: 7
 
 BuzzFeed and the like has a lot of these articles where they tell you this many things that you should do before you are 20, or 25, or 30. Well, too bad I've done none of those... except for one single thing that has been on my bucket list to do before reaching the 25 mark:
 
-*Co-found my first tech start-up company*
+*Have my own tech start-up company*
 
-I am glad to announce that I am now switching to write some kick-ass code full-time at Esplorio, the beloved start-up company where I began my career, with a slightly different title: CTO & Co-founder
+I am glad to announce that I am now switching to write some kick-ass code full-time at Esplorio, the beloved start-up company where I began my career, with a slightly different title: CTO & Co-founder (aka Chief Keyboard Warrior).
 
 The past 2 years and 10 months with Ocado has been a great great time. I've built a tonne of things, learnt a lot and made many good friends. But working on 2 things at the same time was draining, and as soon as I managed to match the number of working hours at Esplorio with my full-time job at Ocado, I knew that I needed to end it otherwise I'd just crash and burn.
 
