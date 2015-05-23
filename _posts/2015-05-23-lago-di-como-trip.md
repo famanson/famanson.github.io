@@ -23,12 +23,12 @@ Building a start-up company has always been about exploring the possibilities - 
 Amongst the Esplorio board of directors, so far we have had:
 
 ```
-~ 220 commits made to codebase
-~ 10 pull requests merged (with a few more pending)
-~ 1500 lines of new code
+~220 commits made to codebase
+~10 pull requests merged (with a few more pending)
+~1500 lines of new code
 USD???000 worth of stuff into our warchest while still on the move
 82 new designs reviewed
-~ 2100km travelled so far
+~2100km travelled so far
 5 countries
 140mph top speed on road
 189mph top speed on rail
