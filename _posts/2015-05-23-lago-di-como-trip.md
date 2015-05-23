@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why we do a road trip to Italy to work
+title: Why we go on a road trip to Italy to rebuild Esplorio
 year: 2015
 month: May
 day: 23
@@ -19,6 +19,8 @@ Now, I have the answer for that little guy.
 Why, you ask? Because you can."
 
 Building a start-up company has always been about exploring the possibilities - this first Esplorio road trip is the very embodiment of that. We have the freedom to choose a life outside of the restriction of the cubicles, and we did exactly that. Almost everybody we met on the trip is very surprised when we told them we are here to work. That is understandable because people come here to enjoy the beautiful scenery, relax, eat, drink and to take a break from their busy life. However, we came here to not only enjoy life or celebrate our recent successes, but also to get some inspiration and remind ourselves that anything is possible. This much fun while effectively rebuilding Esplorio codebase inside-out from the core, and all of it costs less than having an office in London? Yes, please!
+
+Besides, [travelling while using Esplorio](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) makes us understand our own product even more, think about how to improve it, discover more use cases and get insights on different problems. What's most satisfactory to me is that this kind of trips validate our ideas and the whole reasoning behind what we are building.
 
 Amongst the Esplorio board of directors, so far we have had:
 
