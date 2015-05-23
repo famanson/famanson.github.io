@@ -53,7 +53,5 @@ USD???000 worth of stuff into our warchest while still on the move
 
 Yep, the future is good, kiddo.
 
-*23 Maggio 2015*
-
 *Comune di Bellano, Lecco, Lombardia, Italia*
 
