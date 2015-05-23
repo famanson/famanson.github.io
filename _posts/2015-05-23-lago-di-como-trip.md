@@ -8,7 +8,7 @@ day: 23
 
 ## Because we can.
 
-As a kid, I have always wanted to become a "computer engineer", but "What the hell does such an engineer do?" - I always wondered.
+As a kid, I have always wanted to become a "computer engineer", but "What the hell does such an engineer do?" - I wondered.
 
 Now, I have the answer for that little guy.
 
