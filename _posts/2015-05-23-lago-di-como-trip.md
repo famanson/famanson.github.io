@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why we do a road trip to Italy to rebuild Esplorio
+title: Why we do a road trip to Italy to work
 year: 2015
 month: May
 day: 23
@@ -51,7 +51,7 @@ USD???000 worth of stuff into our warchest while still on the move
 
 Yep, the future is good, kiddo.
 
-23 Maggio 2015
+*23 Maggio 2015*
 
-Comune di Bellano, Lecco, Lombardia, Italia
+*Comune di Bellano, Lecco, Lombardia, Italia*
 
