@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Why we do a road trip to Italy to rebuild Esplorio
 year: 2015
 month: May
 day: 23
