@@ -39,7 +39,7 @@ USD???000 worth of stuff into our warchest while still on the move
 1kg of Bistecca
 12 kebabs with multiple types of pork
 3 Pizzas/person
-3 Gelatos/person
+4 Gelatos/person
 2 bottles of Prosecco
 5 litres of beer
 1 litre of dangerously cheap Limoncello
