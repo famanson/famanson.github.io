@@ -6,11 +6,13 @@ month: July
 day: 7
 ---
 
-## The shit hits the fan.
+## When the shit hits the fan.
 
 *Quick intro: GitHub is where we host our code, and CircleCI is where we run our tests. CircleCI has set up a hook for GitHub to notify them of new changes/branches/projects and run the set of tests define in those automatically in containers*
 
-*What is written in this article is purely my own speculation on what happened, and I took a particular interest in it because it has a lot of similarities with our own backend system at Esplorio*
+*What is written in this article is purely my own speculation on what happened, and I took a particular interest in it because I find that it has a lot of similarities with our own backend system at Esplorio*
+
+<iframe src="//giphy.com/embed/11Ej01Grffnr20" width="480" height="364" frameBorder="0" style="max-width: 100%;margin:20px auto;display:block" class="giphy-embed" align="center" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 An earlier GitHub outage practically DDOS'ed CircleCI. All the hooks over the period of time GitHub had their problem got called. This quickly filled up CircleCI's capacity and caused a major slowdown, forcing them to scale up to deal with the problem. The CircleCI database issue that happened system-wide immediately afterwards is either very unfortunately timed or a direct consequence of this - either way, some people in San Francisco had a very bad day in the office... There is not much of an official statement on what exactly went on yet. Personally, I think the 2 incidents are very likely to be linked.
 
