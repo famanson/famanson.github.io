@@ -22,7 +22,7 @@ I do not know what precisely CircleCI is doing under the hood to work with GitHu
 
 To reflect on our own system at Esplorio, a sudden surge of usage could cause all sorts of funny problems. Our own database at Esplorio has had weird beviours before simply because it was running low on disk space due to a daily job every night without any of us noticing (because the original problem itself that caused the database crisis would be gone in the morning). Another reason why it slipped under our radar was because our database was still growing - the more it grows, the more disk space is used for these other database jobs that we set up, and it only started to hit when it reached a tipping point where it started struggling with other core processes for resources.
 
-Scaling is all fun and good until you realise there are still a thousand of ways that your system can be screwed up in the wild. I do hope the guys at CircleCI can resolve their issues - for now, we'll just have to make do with running our tests on our own machines
+Moral of the story: scaling is all fun and good until you realise there are still a thousand of ways that your system can be screwed up in the wild. I do hope the guys at CircleCI can resolve their issues - for now, we'll just have to make do with running our tests on our own machines
 
 ```
 [Update from CircleCI as of the time this blog article was posted]
