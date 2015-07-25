@@ -14,7 +14,7 @@ Now, I have the answer for that little guy.
 
 ![Bellano view from morning jog](https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11272793_844225528996996_180428685_n.jpg)
 
-"Kid, in the future, you will sit outside of a retreat home under the Sun, holding a beer in your hand, looking out to one of the most beautiful lakes in Italy with farwaway snow-covered mountains on the other side, while building an application powered by a dozen virtual machines elsewhere in the world.
+"Kid, in the future, you will sit outside of a retreat home under the Sun, holding a beer in your hand, looking out to one of the most beautiful lakes in Italy with faraway snow-covered mountains on the other side, while building an application powered by a dozen virtual machines elsewhere in the world.
 
 Why, you ask? Because you can."
 
