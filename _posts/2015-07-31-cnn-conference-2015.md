@@ -6,7 +6,7 @@ month: July
 day: 31
 ---
 
-## Vì sao vẫn làm CNN Conference?
+## Vietnamese post - CNN Conference có gì hot?
 
 Series các câu hỏi nổi bật nhận được trong những ngày qua về CNN Conference
 
