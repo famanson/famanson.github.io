@@ -36,6 +36,12 @@ Series các câu hỏi nổi bật nhận được trong những ngày qua về 
 
 *Đương nhiên là ok rồi.*
 
+### Muốn đi phải làm gì?
+
+*Đăng ký ở [đây](http://tiny.cc/globalcc2015) rồi 7h45 sáng có mặt*
+
+*RSVP ở trên [facebook](https://www.facebook.com/events/927586957264334/) cho vui*
+
 ### "Tóm tắt lại trong ngày có gì?"
 
 *Sáng có panel discussion hay ho của đại diện 1 số quốc gia, chiều đến có đủ các booth của 10 nước, tha hồ nói chuyện với các bạn/anh chị du hí và du học sinh cool cool.*
