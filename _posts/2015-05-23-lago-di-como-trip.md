@@ -14,13 +14,11 @@ Now, I have the answer for that little guy.
 
 ![Bellano view from morning jog](https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11272793_844225528996996_180428685_n.jpg)
 
-https://esplor.io/trips/7ttnghc0cqcnj/diary
-
 "Kid, in the future, you will sit outside of a retreat home under the Sun, holding a beer in your hand, looking out to one of the most beautiful lakes in Italy with faraway snow-covered mountains on the other side, while building an application powered by a dozen virtual machines elsewhere in the world.
 
 Why, you ask? Because you can."
 
-Building a start-up company has always been about exploring the possibilities - this first Esplorio road trip is the very embodiment of that. We have the freedom to choose a life outside of the restriction of the cubicles, and we did it. Almost everybody we have met on the trip is very surprised when we tell them we are here to work. That is understandable because people come here to enjoy the beautiful scenery, relax, eat, drink and to take a break from their busy life. However, we came here to not only enjoy life or celebrate our recent successes, but also to get some inspiration and remind ourselves that anything is possible. This much fun while effectively rebuilding Esplorio codebase inside-out from the core, and all of it costs less than having an office in London? Yes, please!
+Building a start-up company has always been about exploring the possibilities - [this first Esplorio road trip is the very embodiment of that](https://esplor.io/trips/7ttnghc0cqcnj/diary). We have the freedom to choose a life outside of the restriction of the cubicles, and we did it. Almost everybody we have met on the trip is very surprised when we tell them we are here to work. That is understandable because people come here to enjoy the beautiful scenery, relax, eat, drink and to take a break from their busy life. However, we came here to not only enjoy life or celebrate our recent successes, but also to get some inspiration and remind ourselves that anything is possible. This much fun while effectively rebuilding Esplorio codebase inside-out from the core, and all of it costs less than having an office in London? Yes, please!
 
 Besides, [travelling while using Esplorio](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) makes us understand our own product even more, think about how to improve it, discover more use cases and get insights on different problems. What's most satisfactory to me is that this kind of trips validate our ideas and the whole reasoning behind what we are building.
 
