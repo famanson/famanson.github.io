@@ -6,7 +6,7 @@ month: September
 day: 15
 ---
 
-## It's time to just do it
+## Next destination: San Francisco
 
 3 months ago, the reaction would be "Yeah, let's go to Disrupt SF!", now it has changed to "Holy shit, it's next week..."
 
