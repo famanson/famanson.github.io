@@ -14,7 +14,7 @@ We've now got a solid platform, with an upcoming iOS app that we have always wan
 
 ![just-do-it](http://i.imgur.com/JAZkaBP.png)
 
-There is still a crazy amount of work to do. The more we get finished, the more there new stuff there is. However, it is safe to say that I am having the time of my life right now, and the best is yet to come.
+There is still a crazy amount of work to do. The more we get finished, the more new stuff there is. However, it is safe to say that I am having the time of my life right now, and the best is yet to come.
 
 Let's hope all the long hours and all those "Okay, I'll stay back to finish this, maybe one fewer day/night out/game..." moments will eventually pay off. See you again soon, San Francisco.
 
