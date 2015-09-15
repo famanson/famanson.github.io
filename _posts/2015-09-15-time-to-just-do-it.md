@@ -10,7 +10,7 @@ day: 15
 
 3 months ago, the reaction would be "Yeah, let's go to Disrupt SF!", now it has changed to "Holy shit, it's next week..."
 
-We've now got a solid platform, with an upcoming iOS app that we have always wanted to build reaching launch date, and (positive - woot!) feedback flooding in from beta users and early adopters. In the past 4 months, I have written a lot of thousands of lines of code in at least 5 different programming languages, and currenyly on an over month-long GitHub streak with 70 pull requests within the last 7 days alone. Recruiters who spams me with LinkedIn messages about "new exciting challenges", please take note: if something can pique my interest, it needs to be that Esplorio-level challenging and addicting.
+We've now got a solid platform, with an upcoming iOS app that we have always wanted to build reaching launch date, and (positive - woot!) feedback flooding in from beta users and early adopters. In the past 4 months, I have written a lot of thousands of lines of code in at least 5 different programming languages, and currently on an over month-long GitHub streak with 70 pull requests within the last 7 days alone. Recruiters who spams me with LinkedIn messages about "new exciting challenges", please take note: if something can pique my interest, it needs to be that Esplorio-level challenging and addicting.
 
 ![just-do-it](http://i.imgur.com/JAZkaBP.png)
 
