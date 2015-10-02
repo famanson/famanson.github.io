@@ -8,6 +8,8 @@ day: 10
 
 ## Not your kind of people
 
+![Supermoon observers](https://farm1.staticflickr.com/680/21857394621_1456882ba0_k_d.jpg)
+
 _From the point of view of an outsider_
 
 On one hand, I got to meet exceptional individuals on my trip to San Francisco and the Bay Area. These people are the ones in the driving who push the limits of technology, constantly on the forefront of innovation, trying to have a shot at the impossible, and keeping the wealth flowing in. No exaggeration: they left me in awe of their intelligence and talents. Oh yes, there are way way more talents to tap into outside of Silicon Valley - but these superhumans are a totally different breed, seriously...
