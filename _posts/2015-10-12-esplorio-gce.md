@@ -10,7 +10,7 @@ day: 12
 
 The Esplorio team has moved into the same town resulting in me sharing a flat with Essa, and we took our servers along with us (I kid, I kid)
 
-A while back we managed to wiggle our way into the Google Launch programme, which includes a $100k voucher of Google Compute Engine (GCE) credits. The idea is that Google will assist these new exciting startups to scale with many different resources they have at their command, and beefy servers are just one of their specialties. There were a few technical gotchas I will mention at the end so if you want to skip the BS, go all the way down to [The gotchas](#gotchas)
+A while back we managed to get into the Google Launch programme, which includes a $100k voucher of Google Compute Engine (GCE) credits. The idea is that Google will assist these new exciting startups to scale with many different resources they have at their command, and beefy servers are just one of their specialties. There were a few technical gotchas I will mention at the end so if you want to skip the BS, go all the way down to [The gotchas](#gotchas)
 
 ## The move
 
