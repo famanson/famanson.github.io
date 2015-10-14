@@ -14,7 +14,7 @@ A while back we managed to get into the Google Launch programme, which includes 
 
 ## The move
 
-These credits sat around for quite some time because our whole team (3+1) were dead focused on getting the iOS app out until about 3 weeks ago when we asked our friend [George Hickman](http://ghickman.co.uk) to join Esplorio once more to help us with this huge move involving a lot of different moving parts:
+These credits sat around for quite some time because our whole team (3+1) were dead focused on getting the iOS app out until about 3 weeks ago when we asked our friend [George Hickman](http://ghickman.co.uk) to join Esplorio once more to help us with this huge switch involving a lot of different moving parts:
 
 - API servers serving the webapp and iOS app
 - Web frontend server
