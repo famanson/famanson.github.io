@@ -8,6 +8,9 @@ day: 18
 
 ## Team Esplorio officially launched the iOS app
 
+![Polo](http://i.imgur.com/i1DbUPK.jpg)
+<div style="font-size:16px;width: 100%;text-align: center"><i>Meet Polo - The Esplorio GPS Kitty</i></div>
+
 We first built our tracking app a long time ago. In the past few months, we put a beautiful UI on it and re-engineered the whole platform in the process.
 
 We went from this simple one-page tracker prototype:
