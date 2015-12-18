@@ -12,17 +12,17 @@ We first built our tracking app a long time ago. In the past few months, we put 
 
 We went from this simple one-page tracker prototype:
 
-<img src="http://i.imgur.com/VqwvTLZ.png" style="width:50%">
+<img src="http://i.imgur.com/GlZ2DCH.png" style="max-width:50%">
 
-to a beautiful trip recording/sharing app:
+to [a beautiful trip recording/sharing app](https://home.esplor.io):
 
-![this awesome app](http://i.imgur.com/WB5onSg.png)
+![this awesome app](http://i.imgur.com/pux8TNl.png)
 
-With a bit of luck, we got Hunted and featured on the top of the Tech featured page for the day. Now that we've launched on the app store plus a shiny ProductHunt badge, it is pretty awesome.
+With a bit of luck, we got [Hunted](https://www.producthunt.com/tech/esplorio) and featured on the top of the Tech featured page for the day. Now that we've launched on the app store plus a shiny ProductHunt badge, it is pretty awesome.
 
 ### What happened behind the scene?
 
-For the 2 days leading up to the launch, we camped at @timfernando's place to work our ass off. The first day we called it a day at 3am, and the second day we pulled an all-nighter trying to get all the launch stuff together then stayed up until late afternoon to respond to all the new traffic. That was almost 40 hours of work for the 2 days - which is pretty much a week equivalent for most people. **It is insane. I do not recommend it.**
+For the 2 days leading up to the launch, we camped at @timfernando's place to work our ass off. The first day we called it a day at 3am, and the second day we pulled an all-nighter trying to get all the launch stuff together then stayed up until late afternoon to respond to all the new traffic. That was almost 40 hours of work for the 2 days - which is pretty much a week equivalent for most people. It is insane! I do not recommend it.
 
 ### And I almost f*cked it up
 
@@ -34,7 +34,7 @@ About 13 hours before launch, I was doing usual maintenance on our servers, rest
 
 **We bit the bullet and used that cluster anyway. It worked flawlessly for the whole launch period.** We then ran an [XDCR](http://docs.couchbase.com/admin/admin/XDCR/xdcr-intro.html) during the launch from this substitute staging cluster to that new production cluster that we built overnight to make sure it always has newest data, and that the view indices will be ready later in the day or maybe the day after at worst.
 
-This afternoon, we confirmed that Couchbase has now sorted itself out on the new production cluster. We made sure all the data is in place, switched all our servers to use that cluster and reversed the XDCR like it was before (production -> staging).
+This afternoon, we confirmed that the new production cluster was ready. We made sure all the data is in place, switched all our servers to use that cluster and reversed the XDCR like it was before (production -> staging).
 
 Yes, that's right. We just fixed our app launch with duct tape *and it worked*.
 
