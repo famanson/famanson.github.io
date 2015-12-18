@@ -25,7 +25,7 @@ With a bit of luck, we got [Hunted](https://www.producthunt.com/tech/esplorio) a
 
 ### What happened behind the scene?
 
-For the 2 days leading up to the launch, we camped at @timfernando's place to work our ass off. The first day we called it a day at 3am, and the second day we pulled an all-nighter trying to get all the launch stuff together then stayed up until late afternoon to respond to all the new traffic. That was almost 40 hours of work for the 2 days - which is pretty much a week equivalent for most people. It is insane! I do not recommend it.
+For the 2 days leading up to the launch, we camped at Tim's place to work our ass off. The first day we called it a day at 3am, and the second day we pulled an all-nighter trying to get all the launch stuff together then stayed up until late afternoon to respond to all the new traffic. That was almost 40 hours of work for the 2 days - which is pretty much a week equivalent for most people. It is insane! I do not recommend it.
 
 ### And I almost f*cked it up
 
