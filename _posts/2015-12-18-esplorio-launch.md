@@ -39,7 +39,7 @@ About 13 hours before launch, I was doing usual maintenance on our servers, rest
 
 This afternoon, we confirmed that the new production cluster was ready. We made sure all the data is in place, switched all our servers to use that cluster and reversed the XDCR like it was before (production -> staging).
 
-Yes, that's right. We just fixed our app launch with duct tape *and it worked*.
+Yes, that's right. We just fixed our app launch with duct tape *and it worked* - you can now get it at [https://home.esplor.io](https://home.esplor.io)!
 
 Startup life is fun.
 
