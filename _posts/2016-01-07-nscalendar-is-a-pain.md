@@ -35,7 +35,8 @@ would result in `04 Jan 0028` once the phone is set to use Japanese calendar, an
 *The solution is to actually be using the `en_US_POSIX` locale but set both the default calendar identifier in `DateTools` and the calendar identifier on each formatter to the default system identifier. If you do not use `DateTools`, do make sure that whatever date/calendar solution you go with in the end does this as well!*
 
 ```
-    // The DateTools method to set default calendar (do this once at app launch)
+    // The DateTools method to set default calendar
+    // (do this once at app launch)
     NSDate.setDefaultCalendarIdentifier(NSCalendar.currentCalendar().calendarIdentifier)
 
     // Rest of the code
