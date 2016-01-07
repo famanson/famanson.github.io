@@ -68,7 +68,8 @@ The above code will result in the string `04 Jan 0028`. To work around this prob
 ```
   // A date formatter used for display views
   private static let displayDateFormatter: NSDateFormatter = {
-    // Remember this following call is put here for illustrations purpose - in reality it should be in app launch
+    // Remember this following call is put here for illustration
+    // In reality it should be in app launch
     NSDate.setDefaultCalendarIdentifier(NSCalendar.currentCalendar().calendarIdentifier)
     let formatter = NSDateFormatter()
     // Use the default calendar identifier but with the en_US_POSIX locale
