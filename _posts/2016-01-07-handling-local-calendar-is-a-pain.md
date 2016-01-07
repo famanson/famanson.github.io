@@ -10,7 +10,7 @@ day: 7
 
 *I am writing this blog entry as a note to myself for future reference in case other people have the same problems as well, especially if you use `DateTools` and `CoreData` in your app*
 
-Time format plays a big role in our application. We not only need to be able to make requests to our backend servers with the right format (let's say something like "get all data before 1 Jan 2016"), but also need to show the user the date in a consistent way. Now since we noticed we have a lot of users in Japan, I thought maybe it is a good idea to switch to the Japanese calendar to see if our app still works correctly.
+Time format plays a big role in our application. We not only need to be able to make requests to our backend servers with the right format (let's say something like "get all data before 1 Jan 2016"), but also need to show the user the date in a consistent way. Now since we suddenly got a big feature in TechCrunch Japan and had an influx of new users from the other side of the planet, I thought maybe it is a good idea to switch to the Japanese calendar to see if our app still works correctly.
 
 This uncovered a whole world of hurt given that we have not done any proper localisation yet, and are really keen on keeping Gregorian calendar as the standard across our codebase.
 
