@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The problem with NSCalendar
+title: Handling local calendar in Swift
 year: 2016
 month: January
 day: 7
