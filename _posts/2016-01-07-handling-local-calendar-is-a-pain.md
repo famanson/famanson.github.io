@@ -6,7 +6,7 @@ month: January
 day: 7
 ---
 
-## "Timezone", "calendar", "region", "locale" are 4 words that strike fear into any software engineer's mind
+## "Timezone", "calendar", "region", "locale" are 4 words that strike fear into my mind
 
 *I am writing this blog entry as a note to myself for future reference in case other people have the same problems as well, especially if you use `DateTools` and `CoreData` in your app*
 
