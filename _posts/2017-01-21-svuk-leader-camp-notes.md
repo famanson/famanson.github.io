@@ -10,12 +10,9 @@ Here are my personal notes from the [event](https://www.facebook.com/events/2026
 
 Topic: “The goal is for young leaders to be inspired from your story and go back to their VietSoc and have that mindset of connecting ppl and their community”
 
-```
-Legend:
-
-- VOX: [Vietnamese Society in Oxford](https://www.facebook.com/vox.uk/) ("vox" means voice in Latin)
+Notes:
+- VOX: [Vietnamese Society in Oxford](https://www.facebook.com/vox.uk/) (`vox` means voice in Latin)
 - VietStartup: [VietStartup London](https://www.facebook.com/groups/vietstartup.london/)
-```
 
 - **“Đoàn kết” (unity) in its purest sense is virtually impossible**
     - Each person within a community has a different idea
