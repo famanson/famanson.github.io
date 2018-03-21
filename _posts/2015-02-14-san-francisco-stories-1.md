@@ -8,7 +8,7 @@ day: 14
 
 ## Land of opportunities and surprising encounters
 
-It was a long Wednesday, we went around town to sort out a few things and decided to find a coffee place nearby to regroup, sit down, and gather our thoughts on what to do next. 
+It was a long Wednesday, we went around town to sort out a few things and decided to find a coffee place nearby to regroup, sit down, and gather our thoughts on what to do next.
 
 ![Philz Coffee](https://esplorio-photo-uploads.s3.amazonaws.com/b1413a452b869375b18ca58ae958f305.jpg)
 

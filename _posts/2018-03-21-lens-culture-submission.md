@@ -9,7 +9,7 @@ day: 21
 I submitted [a series of images](https://www.lensculture.com/sean-ph-m?modal=project-412991) to a LensCulture competition last year.
 
 > Hanoi: A Journey of Rediscovery
-> 
+>
 > These are selected from 10 rolls of film I shot in the street during my trip to Hanoi earlier this year (2017) for the Lunar New Year.
 
 There was not much hope in winning anyway. I gave it up very quickly after I saw the competition highlights. But each entry is given a free review, and I thought that was still worth going for.
@@ -23,9 +23,9 @@ Then I completely forgot about it. Somehow LensCulture did not notify me when th
 ![submission images](https://d2ffutrenqvap3.cloudfront.net/items/0c130h3F0D2V3F1V211V/Image%202018-03-20%20at%204.33.28%20pm.png?v=dc6518c5)
 
 > I am moved by this work and the personal nature of going home again. To make a visual record of a place you once knew well but are retracing requires some text which you have provided. It's especially important in a few of the photographs like the motorbike and the family with cafe and home in one. You mention wanting to strengthen your storytelling here but in my opinion, it's already pretty good! Your commentary seems to be about the city from a little bit of distance though and I found myself wanting to see someone you knew or family or something even more personal which you may have in other frames? If so, try including it in this edit. If I want to give a single piece of advice it would be to watch your framing. Sometimes it is really exquisite which raises the bar high and then some of the other images seem like they may have been rushed or taken without consent. #8 & 9 are in the top category for me where you have photographed a real moment in time in such a way that your viewer is drawn to examine the entire image. We want to see in the photograph itself as much as possible because it is such a strong depiction of this time/place/emotion. Beautifully done! #1,5,6 and 7 are also great in the series. The few that I take exception with are #2,3 and 4 and mainly the reason is that I want to add more to each of these scenes. I want to see the context in which each of these photographs is taken. In the Dominos photograph, the sign is a major part of the image but you are skilled photographer and with the method seen in image #9, you would be able to say something that shows the old vs. new in a more striking way.
-> 
+>
 > I say this because again, you have some absolutely wonderful works here and your interest in pulling them together and elevating the narrative all point to wanting to have a cohesive body of work. These comments are meant to be encouraging in that direction. I am also wondering if there is a London component here. What is the counter point to your previous life in Hanoi where you live now? There is a photographer named Alec Soth who has done some personal work with his own life story that you might take a look at. Magnum photographs has a number of members who make personal stories especially someone like Guerogui Pinkhassov. Am also appreciating that you work with film here. This technique can slow photographers down but that can be a good thing, making you consider each frame and to economize with your material in a way that digital doesn't often make us do.
-> 
+>
 > Thanks for sharing this work and I wish you much success in the future with it!
 
 ### Additional Recommendations (books & photographers)

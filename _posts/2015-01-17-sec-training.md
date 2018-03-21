@@ -6,7 +6,7 @@ month: January
 day: 17
 ---
 
-Ocado organised a Security Training course with the amazing [@diniscruz](https://twitter.com/diniscruz). The knowledge from the course is not just restricted to just Ocado's use case but can be applied elsewhere. Here is my notes from the course. 
+Ocado organised a Security Training course with the amazing [@diniscruz](https://twitter.com/diniscruz). The knowledge from the course is not just restricted to just Ocado's use case but can be applied elsewhere. Here is my notes from the course.
 
 ## I. Introduction
 
@@ -130,7 +130,7 @@ XSS is one of the top issues around here because it can hit both external and in
 **Secure Coding:** building an application that allows people to develop and experiment with business requirements without worrying about security vulnerbilities. What Dinis did for [TeamMentor](https://github.com/TeamMentor) is:
 
 - **No Javascript anywhere on the page** - this cripples the whole idea of scripts altogether
-- All HTMLs are generated entirely from jadejs and Markdown - so that cripples the only other attack vector left 
+- All HTMLs are generated entirely from jadejs and Markdown - so that cripples the only other attack vector left
 - They even make their whole codebase open (this guy is insane + awesome at the same time it confuses me)
 - Now if there are any vulnerabilities, it must have come from jade - which is fine because it makes crisis management a lot easier
 

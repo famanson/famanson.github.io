@@ -50,7 +50,7 @@ Series các câu hỏi nổi bật nhận được trong những ngày qua về 
 
 ![poster-2015](http://i.imgur.com/W2B6xYX.png)
 
-... and here goes bonus round 1: 
+... and here goes bonus round 1:
 
 ![awesome1](http://i.imgur.com/FelZwL6.png)
 

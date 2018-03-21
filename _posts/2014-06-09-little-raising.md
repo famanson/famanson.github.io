@@ -29,8 +29,8 @@ Here's a bunch of little things I've encountered when coding at work and at home
                 description: "${post.description}",
                 type: "${post.type.toString().toLowerCase()}",
                 images: [
-                	<c:forEach items="${post.images}" 
-                			var="image" 
+                	<c:forEach items="${post.images}"
+                			var="image"
                 			varStatus="imageLoop">
                 		'${image}'
                 		<c:if test="${!imageLoop.last}">,</c:if>
