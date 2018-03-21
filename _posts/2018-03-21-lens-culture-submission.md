@@ -10,7 +10,7 @@ I submitted [a series of images](https://www.lensculture.com/sean-ph-m?modal=pro
 
 > Hanoi: A Journey of Rediscovery
 > 
-> These are selected from 10 rolls of film I shot in the street during my trip to Hanoi earlier this year for the Lunar New Year.
+> These are selected from 10 rolls of film I shot in the street during my trip to Hanoi earlier this year (2017) for the Lunar New Year.
 
 There was not much hope in winning anyway. I gave it up very quickly after I saw the competition highlights. But each entry is given a free review, and I thought that was still worth going for.
 
