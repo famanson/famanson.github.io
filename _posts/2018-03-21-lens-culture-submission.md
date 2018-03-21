@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LensCulture Magnum 2017 Submission Review
+title: LensCulture Magnum Photos Award 2017 Submission Review
 year: 2018
 month: March
 day: 21
