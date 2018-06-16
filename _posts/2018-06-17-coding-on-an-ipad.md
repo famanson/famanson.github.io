@@ -3,13 +3,13 @@ layout: post
 title: Setting up a working environment on the iPad
 year: 2018
 month: June
-day: 16
+day: 17
 image: https://cl.ly/sIWq/IMG_2528.jpg
 ---
 
 ![header-image](https://cl.ly/sIWq/IMG_2528.jpg)
 
-## How it all started
+## How it started
 
 I am on a quest to travel quickly and carry lighter, more compact gear. In the past 2 years, my old Canon 7D DSLR setup (including the infamously bulky Sigma 50mm f/1.4) has been gradually replaced by a combination of mirrorless kit (Fujifilm X-Pro2) and film rangefinder (Bessa R2M). However, there is still a problem: I not only carry camera gear on the move, but also *a laptop*.
 
@@ -19,14 +19,13 @@ The only thing left is to come back to my engineering root: *I want to set up a 
 
 ## The requirements
 
-Because of how I set up my programming environment everywhere else already, there are several very specific requirements that I need from this new setup.
+As a software engineer, text editors and CLI software are my tools of trade. I spend most of my screen time working with either of those during a usual day of work, so I always take (a bit too much) time to evaluate and customise them. And because of my routine and how I've set up my programming environment everywhere else already, there are several very specific requirements that I need from this new setup.
 - I need to get my passwords from  [pass](https://www.passwordstore.org/)
 - A VPN client to provide safe passage on the treacherous parts of the Internet
 - A decent code editor
 - A GitHub/SSH client
 - Some sort of UNIX terminal
 
-As a software engineer, text editors and CLI software are my tools of trade. I spend most of my screen time working with either of those during a usual day of work, so I always take (a bit too much) time to evaluate and customise them.
 
 ## The Solution
 
