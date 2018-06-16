@@ -102,7 +102,7 @@ So that left `Textastic` as the final option...
 
 ![Textastic](https://cl.ly/sLd1/IMG_0016.jpg)
 
-... which checks all the boxes:
+... which checks all the tickboxes:
 - A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
 - The design of the app is top-notch
 - It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
