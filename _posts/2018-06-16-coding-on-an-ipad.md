@@ -76,7 +76,7 @@ On the laptop, I use [Sublime Text](https://www.sublimetext.com/) for javascript
 #### Working Copy
 Having worked out that the `ssh` /`git`client inside the terminal alone would not cut it for code reviews, I tried to find a full-blown standalone `git`  client. Before having the iPad, I used to use [iOctocat](https://github.com/dennisreimann/ioctocat) to get notifications from PRs and then review/comment on the code on it or on my MacBook. However, with the iPad, the screen is no longer tiny so I can just use `GitHub`’s pull request interface on `Safari` itself. Since `iOctocat` was sunset, I have reconfigured my `Slack` notifications to push `GitHub` PRs notifications to me on my iOS devices. What this means is that I can now remove push notifications from the list of required features on my `git` client, which unlocked a few choices. Eventually, I settled on [Working Copy](https://workingcopyapp.com).
 
-[Working Copy 1](https://cl.ly/sJaS/IMG_0009%202.png)
+![Working Copy 1](https://cl.ly/sJaS/IMG_0009%202.png)
 
 `Working Copy` is a `git` client with a simple text editor shipped along with it. It is very well designed, and the feature set is just what I need:
 - Easy integration with `GitHub`
@@ -84,7 +84,7 @@ Having worked out that the `ssh` /`git`client inside the terminal alone would no
 - Repos are fully available offline when cloned (this sounds obvious but it is surprisingly difficult to get right)
 - *It is iOS 11 capable* - this means that it can clone repos to iOS 11’s `Files`, which is a really useful feature. This means that if one wants to use a different text editor on top of it, that text editor just needs to be able to read from the same file system. It’s what I ended up doing myself because I’m not quite satisfied with the editor on `Working Copy` . It works just fine for things like HTML and Markdown, but that’s about it.
 
-[Working Copy 2](https://cl.ly/sKBy/IMG_0010%202.png)
+![Working Copy 2](https://cl.ly/sKBy/IMG_0010%202.png)
 
 And so onwards to the next section...
 
@@ -98,6 +98,7 @@ I was presented with a few recommendations on the text editors front. It came do
 - So that left `Textastic` as the final option, and it checks all the boxes
 
 ![Textastic 1](https://cl.ly/sJPu/IMG_0013%202.png)
+
 ![Textastic 2](https://cl.ly/sJ8m/IMG_0015%202.png)
 
 	- [x] A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
