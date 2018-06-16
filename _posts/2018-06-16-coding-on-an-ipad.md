@@ -25,9 +25,7 @@ Because of how I set up my programming environment everywhere else already, ther
 
 ## The Solution
 
-### Admin
-
-#### Pass
+### Pass
 
 ![passwordstore](https://cl.ly/sJAj/Image%202018-06-16%20at%202.03.54%20pm.jpg)
 
@@ -38,7 +36,7 @@ On the iPad, I have found that the combination of [Pass for iOS](https://itunes.
 - For some reason `ssh://` scheme does not work for me when setting up the password sync to my private GitHub repo. I had to resort to authenticating via HTTPS using a newly generated personal access token (since I have two-factor auth).
 - I highly recommend turning on Touch ID and add a password to your `pass` store.
 
-#### Encrypt.me (formerly CloakVPN)
+### Encrypt.me (formerly CloakVPN)
 There is very little to complain about [encrypt.me](https://encrypt.me/)  except that the old name is much cooler. If you have an iPhone/iPad/Mac and work remotely a lot, I highly recommend it!
 
 It is fast, simple, and just works. In some places, the connection speed might suffer when it is turned on. But if I need to establish a secure line to a production server while on the move in the Wild West, the trade-off is definitely acceptable.
@@ -72,9 +70,6 @@ The last 3 items on that list are what sold me on the Pro plan.
 
 It is also worth mentioning that as a system restriction, apps cannot stay in the background for too long (up to 3 minutes in most cases). Sometimes when working with an active terminal, we might need more than that, so `Termius` came up with a solution where the app asks for `Always` location access on the iOS device to keep the process running. It’s nothing mind-blowing but for someone who works a lot with GPS tracking and has hit similar iOS limtations many times, I find these little workaround interesting.
 
-#### Text editors
-On the laptop, I use [Sublime Text](https://www.sublimetext.com/) for javascript frontend, [PyCharm](https://www.jetbrains.com/pycharm/) for python backend and [XCode](https://developer.apple.com/xcode/) for iOS development extensively. I did not bother setting up an `XCode`-equivalent on the iPad because it is not mission-critical and, to my knowledge, there is no way to set up a proper iOS development on an iOS device itself. So that left a replacement for `Sublime Text` and `PyCharm` to be figured out.
-
 #### Working Copy
 Having worked out that the `ssh` /`git`client inside the terminal alone would not cut it for code reviews, I tried to find a full-blown standalone `git`  client. Before having the iPad, I used to use [iOctocat](https://github.com/dennisreimann/ioctocat) to get notifications from PRs and then review/comment on the code on it or on my MacBook. However, with the iPad, the screen is no longer tiny so I can just use `GitHub`’s pull request interface on `Safari` itself. Since `iOctocat` was sunset, I have reconfigured my `Slack` notifications to push `GitHub` PRs notifications to me on my iOS devices. What this means is that I can now remove push notifications from the list of required features on my `git` client, which unlocked a few choices. Eventually, I settled on [Working Copy](https://workingcopyapp.com).
 
@@ -91,6 +86,8 @@ Having worked out that the `ssh` /`git`client inside the terminal alone would no
 And so onwards to the next section...
 
 #### Textastic
+On the laptop, I use [Sublime Text](https://www.sublimetext.com/) for javascript frontend, [PyCharm](https://www.jetbrains.com/pycharm/) for python backend and [XCode](https://developer.apple.com/xcode/) for iOS development extensively. I did not bother setting up an `XCode`-equivalent on the iPad because it is not mission-critical and, to my knowledge, there is no way to set up a proper iOS development on an iOS device itself. So that left a replacement for `Sublime Text` and `PyCharm` to be figured out.
+
 I was presented with a few recommendations on the text editors front. It came down to one of: [Buffer](http://buffereditor.com) (on 50% sale as I am writing this article), [Coda](https://panic.com/coda/?),  [Pythonista 3](http://omz-software.com/pythonista/) and [Textastic](https://www.textasticapp.com/)
 - `Coda` ‘s price is way above the rest of the competition. To be fair, it seems to be much more feature-rich, but I don’t need the whole shebang for my kind of usage. I quickly gave it a pass.
 - `Pythonista 3` is a very powerful `python` IDE. It offered `pip` integration inside its own terminal, too! But after hours of trial and error, I could not get everything our web backend needs up and running with it (namely our database software and `CPython` dependencies). So I decided to just go with a generic text editor and rely on my remote Linux boxes and Continuous Integration to run scripts and tests respectively.
