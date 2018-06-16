@@ -99,16 +99,16 @@ I was presented with a few recommendations on the text editors front. It came do
 - Moving on, at first, I thought `Buffer`  editorwas a steal for the price. It is sleek, and is easy to get started. But I quickly hit a couple of issues that eventually let me down:
 	- Even though it supports iOS 11 `Files`, I can only seem to open a single file at a time. This is no good since I work with the whole project this way.
 	- Okay, so if I cannot work with `Working Copy` like that, perhaps I might have better luck with its `GitHub` integration. But after using it for a while, I found myself keep coming back to `Working Copy` time and time again because it has much better UI for running diffs and resolving merge conflicts.
-- So that left `Textastic` as the final option, and it checks all the boxes
 
-![Textastic 1](https://cl.ly/sKHm/IMG_0013.jpg)
+So that left `Textastic` as the final option...
 
-![Textastic 2](https://cl.ly/sJO3/IMG_0015.jpg)
+![Textastic](https://cl.ly/sLd1/IMG_0016.jpg)
 
-	- A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
-	- The design of the app is top-notch
-	- It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
-	- It has `Monokai` theme, which I love (this is on other editors too, but I just have to mention it)
+... which checks all the boxes:
+- A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
+- The design of the app is top-notch
+- It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
+- It has `Monokai` theme, which I love (this is on other editors too, but I just have to mention it)
 
 ## Conclusion:
 
