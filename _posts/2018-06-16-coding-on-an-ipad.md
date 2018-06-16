@@ -88,8 +88,6 @@ Having worked out that the `ssh` /`git`client inside the terminal alone would no
 
 ![Working Copy 2](https://cl.ly/sIzE/IMG_0010.jpg)
 
-And so onwards to the next section...
-
 ### Textastic
 
 On the laptop, I use [Sublime Text](https://www.sublimetext.com/) for javascript frontend, [PyCharm](https://www.jetbrains.com/pycharm/) for python backend and [XCode](https://developer.apple.com/xcode/) for iOS development extensively. I did not bother setting up an `XCode`-equivalent on the iPad because it is not mission-critical and, to my knowledge, there is no way to set up a proper iOS development on an iOS device itself. So that left a replacement for `Sublime Text` and `PyCharm` to be figured out.
