@@ -71,7 +71,7 @@ I also paid for the Pro subscription on  `Termius`  since they also offers a lot
 
 The last 3 items on that list are what sold me on the Pro plan.
 
-It is also worth mentioning that as a system restriction, apps cannot stay in the background for too long (up to 3 minutes in most cases). Sometimes when working with an active terminal, we might need more than that, so `Termius` came up with a solution where the app asks for `Always` location access on the iOS device to keep the process running. It’s nothing mind-blowing but for someone who works a lot with GPS tracking and has hit similar iOS limtations many times, I find these little workaround interesting.
+It is also worth mentioning that as a system restriction, apps cannot stay in the background for too long (up to 3 minutes in most cases). Sometimes when working with an active terminal, we might need more than that, so `Termius` came up with a solution where the app asks for `Always` location access on the iOS device to keep the process running. It’s nothing mind-blowing but for someone who works a lot with GPS tracking and has hit similar iOS limtations many times, I find these little workarounds interesting.
 
 ### Working Copy
 
