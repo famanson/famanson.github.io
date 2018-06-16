@@ -49,7 +49,7 @@ As a software engineer, text editors and CLI are my tools of trade. I spend more
 #### Termius
 When I first attempted to build a terminal simulator on the iPad, I tried to replicated exactly what I had on the laptop. I tried several apps then quickly realised that is impossible since too many system dependencies are missing on iOS, which makes both the `javascript` and the `python` environments unusable. I got as far as setting up just `ssh` and then quickly gave up. At this point, I knew that I’d need a remote environment and since I had been using [Termius](https://www.termius.com/) already on my phone, I simply put it on the iPad. The question is now which remote environment I should set up.
 
-[Termius 1](https://cl.ly/sK1a/[c54b0250dcc9b73770126d5ad526db71]_IMG_0011.jpg)
+![Termius 1](https://cl.ly/sK1a/[c54b0250dcc9b73770126d5ad526db71]_IMG_0011.jpg)
 
 Me being me, I tried another convoluted solution where I can connect remotely to my MacBook at home via a Dynamic DNS setup. I was quite happy with it since it was fast and I can run all of the scripts and tools I already had, but then I took a step back and it dawned on me that:
 - Unless I leave my MacBook at home all the time, this would not work
