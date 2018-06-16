@@ -544,20 +544,23 @@ a.pagination-item:hover {
   width: 90px !important;
 }
 
-
 .twitter-share-button[style] { vertical-align: text-bottom !important; }
 
 .content-wrapper {
   float:left;
 }
 
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page .post {
+  text-align: justify;
+}
+
 @media screen and (min-width: 992px){
   #disqus_thread {
     margin-bottom: 50px;
   }
-}
-
-img {
-    width: 100%;
-    margin: 0 auto;
 }
