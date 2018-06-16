@@ -11,7 +11,7 @@ I am on a quest to travel quickly and carry lighter, more compact gear. In the p
 
 The MacBook Pro 15” (2014) is lighter than most, but it is not a small device. On a weekend trip or when I am on the move for an extended period of time, it can become quite the burden. However, I still do need to bring it along most of the time in case either duty calls or I want some more advanced tools to edit my photos. This is where the iPad Pro comes in: it’s small and light (the 10.9” version), the TrueTone 120Hz screen is marvellous, and it is a very capable writing tool when combined with a good keyboard. Switching my writing (`Bear`) and photo editing (Apple’s very own`Photos`) to it is easy because the flow is already established.
 
-The only thing left is to come back to my engineering root: I want to set up a programming environment on it.
+The only thing left is to come back to my engineering root: *I want to set up a programming environment on it*.
 
 ## The requirements
 Because of how I set up my programming environment everywhere else already, there are several very specific requirements that I need from this new setup.
@@ -26,6 +26,9 @@ Because of how I set up my programming environment everywhere else already, ther
 ### Admin
 
 #### Pass
+
+![passwordstore](https://cl.ly/sJZM/Image%202018-06-16%20at%202.03.54%20pm.png)
+
 [pass](https://www.passwordstore.org) has become an essential part of my life. It is encrypted, secure, simple to use, and, most importantly, lives inside the terminal. I have tried many other password managers including Apple’s very own KeyChain, but none has come near to the level of flexibility and reliability of `pass`.
 
 On the iPad, I have found that the combination of [Pass for iOS](https://itunes.apple.com/us/app/pass-password-store/id1205820573?mt=8) and its Safari extension works very well. There are several things to note during the setup process:
@@ -44,12 +47,16 @@ As a software engineer, text editors and CLI are my tools of trade. I spend more
 #### Termius
 When I first attempted to build a terminal simulator on the iPad, I tried to replicated exactly what I had on the laptop. I tried several apps then quickly realised that is impossible since too many system dependencies are missing on iOS, which makes both the `javascript` and the `python` environments unusable. I got as far as setting up just `ssh` and then quickly gave up. At this point, I knew that I’d need a remote environment and since I had been using [Termius](https://www.termius.com/) already on my phone, I simply put it on the iPad. The question is now which remote environment I should set up.
 
+[Termius 1](https://cl.ly/sIZJ/IMG_0011%202.png)
+
 Me being me, I tried another convoluted solution where I can connect remotely to my MacBook at home via a Dynamic DNS setup. I was quite happy with it since it was fast and I can run all of the scripts and tools I already had, but then I took a step back and it dawned on me that:
 - Unless I leave my MacBook at home all the time, this would not work
 - Besides, it needs to stay turned on most of the time
 - Above all, this is extremely insecure
 
 I then built a Linux box on [AWS EC2](https://aws.amazon.com/ec2/) with everything I need, slap that into a tab on `Termius` and *voila*! I can now run deployment scripts, tests and play around with our code (including `nodejs` and `ember`) on a proper working Linux environment on the go via my iPad anywhere and any time.
+
+![Termius 2](https://cl.ly/sIfS/[dd8bef7747a3bb2bba907ac7b2740a89]_IMG_0012%202.png)
 
 I also paid for the Pro subscription on  `Termius`  since they also offers a lot of extra features than just `ssh` and port forwarding:
 - Terminal tabs
@@ -69,11 +76,15 @@ On the laptop, I use [Sublime Text](https://www.sublimetext.com/) for javascript
 #### Working Copy
 Having worked out that the `ssh` /`git`client inside the terminal alone would not cut it for code reviews, I tried to find a full-blown standalone `git`  client. Before having the iPad, I used to use [iOctocat](https://github.com/dennisreimann/ioctocat) to get notifications from PRs and then review/comment on the code on it or on my MacBook. However, with the iPad, the screen is no longer tiny so I can just use `GitHub`’s pull request interface on `Safari` itself. Since `iOctocat` was sunset, I have reconfigured my `Slack` notifications to push `GitHub` PRs notifications to me on my iOS devices. What this means is that I can now remove push notifications from the list of required features on my `git` client, which unlocked a few choices. Eventually, I settled on [Working Copy](https://workingcopyapp.com).
 
+[Working Copy 1](https://cl.ly/sJaS/IMG_0009%202.png)
+
 `Working Copy` is a `git` client with a simple text editor shipped along with it. It is very well designed, and the feature set is just what I need:
 - Easy integration with `GitHub`
 - Nice tools for resolving merge conflicts
 - Repos are fully available offline when cloned (this sounds obvious but it is surprisingly difficult to get right)
 - *It is iOS 11 capable* - this means that it can clone repos to iOS 11’s `Files`, which is a really useful feature. This means that if one wants to use a different text editor on top of it, that text editor just needs to be able to read from the same file system. It’s what I ended up doing myself because I’m not quite satisfied with the editor on `Working Copy` . It works just fine for things like HTML and Markdown, but that’s about it.
+
+[Working Copy 2](https://cl.ly/sKBy/IMG_0010%202.png)
 
 And so onwards to the next section...
 
@@ -82,9 +93,13 @@ I was presented with a few recommendations on the text editors front. It came do
 - `Coda` ‘s price is way above the rest of the competition. To be fair, it seems to be much more feature-rich, but I don’t need the whole shebang for my kind of usage. I quickly gave it a pass.
 - `Pythonista 3` is a very powerful `python` IDE. It offered `pip` integration inside its own terminal, too! But after hours of trial and error, I could not get everything our web backend needs up and running with it (namely our database software and `CPython` dependencies). So I decided to just go with a generic text editor and rely on my remote Linux boxes and Continuous Integration to run scripts and tests respectively.
 - Moving on, at first, I thought `Buffer`  editorwas a steal for the price. It is sleek, and is easy to get started. But I quickly hit a couple of issues that eventually let me down:
-	- Even though it supports iOS 11 `Files`, I can only seem to open a single file at a time. This is no good since I work with the whole project this way. 
+	- Even though it supports iOS 11 `Files`, I can only seem to open a single file at a time. This is no good since I work with the whole project this way.
 	- Okay, so if I cannot work with `Working Copy` like that, perhaps I might have better luck with its `GitHub` integration. But after using it for a while, I found myself keep coming back to `Working Copy` time and time again because it has much better UI for running diffs and resolving merge conflicts.
 - So that left `Textastic` as the final option, and it checks all the boxes
+
+![Textastic 1](https://cl.ly/sJPu/IMG_0013%202.png)
+![Textastic 2](https://cl.ly/sJ8m/IMG_0015%202.png)
+
 	- [x] A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
 	- [x] The design of the app is top-notch
 	- [x] It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
