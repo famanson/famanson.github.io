@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up a working environment on the iPad
+title: Coding on an iPad
 year: 2018
 month: June
 day: 17
