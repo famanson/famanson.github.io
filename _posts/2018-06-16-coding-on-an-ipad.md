@@ -105,10 +105,10 @@ I was presented with a few recommendations on the text editors front. It came do
 
 ![Textastic 2](https://cl.ly/sJO3/IMG_0015.jpg)
 
-	- [x] A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
-	- [x] The design of the app is top-notch
-	- [x] It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
-	- [x] It has `Monokai` theme, which I love (this is on other editors too, but I just have to mention it)
+	- A whole project can be imported from iOS 11 `Files` . `Working Copy` actually had a way to support `Textastic` via some scripts before, but this just made it an order of magnitude easier
+	- The design of the app is top-notch
+	- It works beautifully with `Working Copy` so there is no need to set up a `GitHub` integration
+	- It has `Monokai` theme, which I love (this is on other editors too, but I just have to mention it)
 
 ## Conclusion:
 
