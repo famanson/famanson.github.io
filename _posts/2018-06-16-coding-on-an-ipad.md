@@ -4,6 +4,7 @@ title: Setting up a working environment on the iPad
 year: 2018
 month: June
 day: 16
+image: https://cl.ly/sIWq/IMG_2528.jpg
 ---
 
 ![header-image](https://cl.ly/sIWq/IMG_2528.jpg)
