@@ -6,11 +6,11 @@ month: June
 day: 16
 ---
 
+![header-image](https://cl.ly/sIWq/IMG_2528.jpg)
+
 ## How it all started
 
 I am on a quest to travel quickly and carry lighter, more compact gear. In the past 2 years, my old Canon 7D DSLR setup (including the infamously bulky Sigma 50mm f/1.4) has been gradually replaced by a combination of mirrorless kit (Fujifilm X-Pro2) and film rangefinder (Bessa R2M). However, there is still a problem: I not only carry camera gear on the move, but also *a laptop*.
-
-![header-image](https://cl.ly/sIWq/IMG_2528.jpg)
 
 The MacBook Pro 15” (2014) is lighter than most, but it is not a small device. On a weekend trip or when I am on the move for an extended period of time, it can become quite the burden. However, I still do need to bring it along most of the time in case either duty calls or I want some more advanced tools to edit my photos. This is where the iPad Pro comes in: it’s small and light (the 10.9” version), the TrueTone 120Hz screen is marvellous, and it is a very capable writing tool when combined with a good keyboard. Switching my writing (`Bear`) and photo editing (Apple’s very own`Photos`) to it is easy because the flow is already established.
 
