@@ -20,7 +20,7 @@ The only thing left is to come back to my engineering root: *I want to set up a 
 ## The requirements
 
 As a software engineer, text editors and CLI software are my tools of trade. I spend most of my screen time working with either of those during a usual day of work, so I always take (a bit too much) time to evaluate and customise them. And because of my routine and how I've set up my programming environment everywhere else already, there are several very specific requirements that I need from this new setup.
-- I need to get my passwords from  [pass](https://www.passwordstore.org/)
+- I need to get my passwords from `pass`
 - A VPN client to provide safe passage on the treacherous parts of the Internet
 - A decent code editor
 - A GitHub/SSH client
@@ -54,7 +54,7 @@ When I first attempted to build a terminal simulator on the iPad, I tried to rep
 
 Me being me, I tried another convoluted solution where I can connect remotely to my MacBook at home via a Dynamic DNS setup. I was quite happy with it since it was fast and I can run all of the scripts and tools I already had, but then I took a step back and it dawned on me that:
 - Unless I leave my MacBook at home all the time, this would not work
-- Besides, it needs to stay turned on most of the time
+- Besides, it needs to stay turned on
 - Above all, this is extremely insecure
 
 I then built a Linux box on [AWS EC2](https://aws.amazon.com/ec2/) with everything I need, slap that into a tab on `Termius` and *voila*! I can now run deployment scripts, tests and play around with our code (including `nodejs` and `ember`) on a proper working Linux environment on the go via my iPad anywhere and any time.
@@ -110,10 +110,10 @@ So that left `Textastic` as the final option...
 
 ## Conclusion:
 
-After weeks of research, I found that `Textastic` and `Working Copy` in split view side-by-side is a powerful pair of tools for text editing and version control. Using this with CI and `Termius`, I can both build new code and fix bugs on both our web frontend and backend servers easily. This is the final combination that I am happy with.
+`Textastic` and `Working Copy` in split view side-by-side makes a powerful pair of tools for coding and version control. Using this with continuous integration and `Termius`, I can both build new code and fix bugs on both our web frontend and backend servers easily.
 
-It is not the full stack that I normally work with since `XCode` is missing, but with [Bitrise](https://www.bitrise.io) + [fastlane](https://fastlane.tools/) + a `GitHub` webhook I can always do some very simple editing and release to [TestFlight](https://developer.apple.com/testflight/) easily. To run the debugger and other heavy tasks for iOS development, I would need the MacBook anyway and the much longer release cycle on iOS means that it isn’t really practical to set up the full dev flow on the go for `XCode` without the laptop.
+It is not the full stack that I normally work with since `XCode` is missing, but with [Bitrise](https://www.bitrise.io) + [fastlane](https://fastlane.tools/) + a `GitHub` webhook, I can always do some very simple editing and release to [TestFlight](https://developer.apple.com/testflight/) easily if necessary. To run the debugger and other heavy tasks for iOS development, I would need the MacBook anyway. Furthermore, the much longer release cycle on iOS means that it isn’t really practical to set up the full dev flow on the go for `XCode` without the laptop.
 
-I hope that this is useful and would save some time for someone out there looking for a development environment on a laptop substitution like I did. Get in touch with me if it does, or if you have a different opinion! Leave a comment here, drop me [a message]( [me@famanson.com](mailto:me@famanson.com), find me on [GitHub](https://github.com/famanson).
+I hope that this would be useful and save some time for someone out there looking for a development environment on a laptop substitution like I did. Get in touch with me if it does, or if you have a different opinion! Leave a comment here, drop me [a message]( [me@famanson.com](mailto:me@famanson.com), find me on [GitHub](https://github.com/famanson).
 
 Have a nice day and happy coding!
