@@ -300,6 +300,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 2em;
+  text-align: justify;
 }
 
 /* Blog post or page title */
@@ -553,10 +554,6 @@ a.pagination-item:hover {
 img {
     width: 100%;
     margin: 0 auto;
-}
-
-.page .post {
-  text-align: justify;
 }
 
 @media screen and (min-width: 992px){
