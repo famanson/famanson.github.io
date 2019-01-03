@@ -27,7 +27,7 @@ I had shot a lot of sports, but nothing came out quite like this. The main thing
 
 I had half an hour to spare near Picaddilly Circus while waiting for my girlfriend. Wandering around one of the back streets, I spotted a scaffolding that covered the whole of the sidewalk. It meant that people would have to walk through it if they want to go through to the station or down to Soho, and in a photographer's eyes, it made for a gorgeous set of subframes so I quickly burnt half a roll in that short half-hour wait into a miniseries.
 
-From that point on, this area right in the heart of London has become my favourite London spot to photograph. At night, the lighting is interesting: there is the large array of LED screens that is capable of lighting almost everything on the other side, and then you also get the bright lights from shop windows and sometimes interesting bits like the above scaffolding would pop up. I would return time and time again here to find myself getting lost amongst the endless streams of passers-by.
+From that point on, this area right in the heart of London has become my favourite spot to photograph. At night, the lighting is interesting: there is the large array of LED screens that is capable of lighting almost everything on the other side, and then you also get the bright lights from shop windows and sometimes interesting bits like the above scaffolding would pop up. I would return time and time again here to find myself getting lost amongst the endless streams of passers-by.
 
 <a href="https://cl.ly/ed915e60e83a" target="_blank"><img src="https://duaw26jehqd4r.cloudfront.net/items/293W3D3l412i1J3z3l2l/SON_935.jpeg" style="display: block;height: auto;width: 100%;"/></a>
 
