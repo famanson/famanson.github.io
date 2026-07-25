@@ -8,12 +8,15 @@
 
 /* --------------------------------------------------------------------------
    Fonts
-   The original set Proxima Nova through a Typekit kit licensed to the
-   Squarespace account, which can't come along. Asap is the closest
-   freely-licensed stand-in: measured against the live site it sits within
-   3.6% of Proxima Nova on width, x-height, cap-height and descender, sets
-   running text to the same line breaks, and covers Vietnamese diacritics.
-   Swap --font-sans to change it everywhere.
+   Proxima Nova — the original typeface — comes from Adobe Fonts, loaded by
+   the kit <link> in each page's head (kit rkw6yhk, weights 100–900 with
+   italics). Adobe web projects are domain-locked, so the allowed-domains
+   list on the project has to include wherever the site is served from.
+
+   Asap is declared below as the fallback: freely licensed, self-hosted, and
+   measured to within 3.6% of Proxima Nova on width, x-height, cap-height and
+   descender (body text within 0.1%), with Vietnamese coverage. Browsers only
+   fetch it if the kit fails to load, so it costs nothing in the normal case.
    -------------------------------------------------------------------------- */
 @font-face {
   font-family: 'Asap';
@@ -65,7 +68,7 @@
 }
 
 :root {
-  --font-sans: 'Asap', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-sans: 'proxima-nova', 'Asap', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
 

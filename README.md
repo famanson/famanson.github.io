@@ -51,15 +51,26 @@ blocks, gallery blocks — so the two long pages lay out exactly as they did.
 
 ## Deliberate differences from the original
 
-- **Typeface.** The original set Proxima Nova through a Typekit kit tied to
-  the Squarespace account, which can't come along. The site now uses
-  [Asap](https://fonts.google.com/specimen/Asap), self-hosted. It was picked
-  by measuring candidates against the live site rather than by eye: Asap
-  lands within 3.6% of Proxima Nova averaged over string widths, x-height,
-  cap-height and descender depth, scored second-best on a normalised
-  letterform-bitmap comparison, breaks running text at the same words, and
-  covers Vietnamese diacritics. Change `--font-sans` at the top of
-  `assets/css/site.css` to swap it.
+- **Typeface.** Proxima Nova is the original face and is still the one in
+  use, now served from our own Adobe Fonts web project (kit `rkw6yhk`, linked
+  from each page's head) rather than Squarespace's. Measured against the live
+  Squarespace site it matches to 0.00% on every string width, x-height,
+  cap-height and descender.
+
+  Two things to know. Adobe web projects are **domain-locked** — the project's
+  allowed-domains list has to include wherever the site is served from, or the
+  fonts silently fall back; and the kit stops working if the Creative Cloud
+  subscription lapses. So [Asap](https://fonts.google.com/specimen/Asap) stays
+  self-hosted in `assets/fonts/` as the fallback: it was picked by measuring
+  candidates against the live site, landing within 3.6% of Proxima Nova on the
+  same metrics (body text within 0.1%) and breaking running text at the same
+  words. Browsers only fetch it if the kit fails, so it costs nothing normally.
+
+  Asap also covers the gap in Proxima Nova itself: the Adobe cut has no
+  Vietnamese diacritics (95 of the 98 characters the writing uses are absent),
+  so "Sơn" and "Hội thảo du học" render their accented letters in Asap. The
+  original had the same gap and fell through to whatever sans the reader's OS
+  supplies; falling through to Asap is a closer match.
 - **Images.** Everything that lived on Squarespace's CDN is now in
   `assets/img/`. Images the posts hotlinked from elsewhere (cl.ly, imgur,
   Flickr, xkcd) still point at those hosts, exactly as they did before.
