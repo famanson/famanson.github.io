@@ -1,9 +1,101 @@
----
-layout: default
-title: "404: Page not found"
----
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — Son &quot;Sean&quot; Pham</title>
+<meta name="description" content="A Study of Street - a series of 7 street photography zines by Son Pham (aka Sean). Each piece of work depict a different part of his street adventure: Escalators, Ride, Stationary, Motion, Together/Close, Together/Far and Nobody.">
+<meta property="og:site_name" content="Son &quot;Sean&quot; Pham">
+<meta property="og:title" content="Not found — Son &quot;Sean&quot; Pham">
+<meta property="og:description" content="A Study of Street - a series of 7 street photography zines by Son Pham (aka Sean). Each piece of work depict a different part of his street adventure: Escalators, Ride, Stationary, Motion, Together/Close, Together/Far and Nobody.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://famanson.github.io/404.html">
+<link rel="icon" href="/assets/img/1521462679211-NMC83JK2JTYQOW76N5PR.jpg">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+(function () {
+  var galleries = ["commute", "escalators", "trains", "vietnam", "scrapbook"];
+  var known = ["commute", "escalators", "trains", "vietnam", "scrapbook", "other-works", "johannes", "blog", "assets"];
+  var isImageSlug = /^[a-z0-9]{16,}$/;
+  var parts = location.pathname.replace(/^\/+|\/+$/g, '').split('/');
+  if (parts.length === 2 && galleries.indexOf(parts[0]) !== -1 && isImageSlug.test(parts[1])) {
+    location.replace('/' + parts[0] + '/#' + parts[1]);
+  } else if (parts.length === 1 && isImageSlug.test(parts[0]) && known.indexOf(parts[0]) === -1) {
+    location.replace('/#' + parts[0]);
+  }
+})();
+</script>
+</head>
+<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-thumbnails thumbnail-aspect-ratio-auto gallery-controls-simple collection-type-page">
+<div id="canvasWrapper">
+  <div id="canvas">
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+    <div id="mobileNav"><div class="wrapper">
+    <nav id="mobilePrimaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="mobileSecondaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class=""><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+    </div></div>
+
+    <div id="headerWrapper">
+      <header id="header">
+        <div id="topNavMobile">
+          <nav id="mobileMenuLink" class="main-nav"><ul><li><a href="#">Menu</a></li></ul></nav>
+        </div>
+        <div id="logo">
+          <h1 class="logo site-title"><a href="/">Son &quot;Sean&quot; Pham</a></h1>
+          <div class="logo-subtitle">The way home is long.</div>
+        </div>
+        <div id="topNav">
+    <nav id="mainNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="secondaryNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class=""><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+        </div>
+      </header>
+    </div>
+
+    <div id="pageWrapper" role="main">
+      <section id="page">
+        <div class="main-content">
+          <div class="sqs-layout"><div class="row sqs-row"><div class="col sqs-col-12 span-12">
+            <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+              <div class="sqs-html-content">
+                <h1>Not found</h1>
+                <p>That page doesn&rsquo;t exist. <a href="/">Head back to the start</a>.</p>
+              </div>
+            </div></div>
+          </div></div></div>
+        </div>
+      </section>
+    </div>
+
+  </div>
 </div>
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

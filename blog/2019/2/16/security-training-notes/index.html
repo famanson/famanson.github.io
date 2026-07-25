@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security training notes — Son &quot;Sean&quot; Pham</title>
+<meta name="description" content="Original posted date: 17 January 2015 Ocado organised a Security Training course with the amazing @diniscruz . The knowledge from the course is not just restricted to just Ocado&#x27;s ">
+<meta property="og:site_name" content="Son &quot;Sean&quot; Pham">
+<meta property="og:title" content="Security training notes — Son &quot;Sean&quot; Pham">
+<meta property="og:description" content="Original posted date: 17 January 2015 Ocado organised a Security Training course with the amazing @diniscruz . The knowledge from the course is not just restricted to just Ocado&#x27;s ">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://famanson.github.io/blog/2019/2/16/security-training-notes/">
+<link rel="icon" href="/assets/img/1521462679211-NMC83JK2JTYQOW76N5PR.jpg">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-thumbnails thumbnail-aspect-ratio-auto gallery-controls-simple collection-type-blog collection-blog view-item">
+<div id="canvasWrapper">
+  <div id="canvas">
+
+    <div id="mobileNav"><div class="wrapper">
+    <nav id="mobilePrimaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="mobileSecondaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class="active-link"><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+    </div></div>
+
+    <div id="headerWrapper">
+      <header id="header">
+        <div id="topNavMobile">
+          <nav id="mobileMenuLink" class="main-nav"><ul><li><a href="#">Menu</a></li></ul></nav>
+        </div>
+        <div id="logo">
+          <h1 class="logo site-title"><a href="/">Son &quot;Sean&quot; Pham</a></h1>
+          <div class="logo-subtitle">The way home is long.</div>
+        </div>
+        <div id="topNav">
+    <nav id="mainNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="secondaryNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class="active-link"><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+        </div>
+      </header>
+    </div>
+
+    <div id="pageWrapper" role="main">
+      <section id="page">
+        <div class="main-content">
+          <article class="hentry post-type-text">
+            <header>
+              <h1 class="entry-title">Security training notes</h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/security-training-notes/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681b497817f7d0df464129"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-03ec066ffdbf9a60e0d1"><div class="sqs-block-content"><p><em>Original posted date: 17 January 2015</em></p>
+<p>Ocado organised a Security Training course with the amazing <a href="https://twitter.com/diniscruz">@diniscruz</a>. The knowledge from the course is not just restricted to just Ocado's use case but can be applied elsewhere. Here is my notes from the course.</p>
+<h2 id="i-introduction">I. Introduction</h2>
+<h3 id="best-practices-for-_code-quality-and-tests_-">Best practices for <em>code quality and tests</em>:</h3>
+<ul>
+<li><code>node.js</code> is a perfect replacement for <code>selenium</code>. Direct DOM manipulation + CSS selectors = win. It can be used for all kinds of penetration tests even if the main stack is not in <code>nodejs</code></li>
+<li>Test coverage stats integration: <a href="coveralls.io">coveralls.io</a></li>
+<li>Write tests along with code (both front and back end)</li>
+<li>Each GitHub issue has its own integration test</li>
+<li>Travis &gt; Jenkins. Run and directly reflect results on GitHub (he probably said this because his whole stack is in GitHub)</li>
+<li>Propagating tests (dev -&gt; QA prod)</li>
+<li>This should even be done locally - tests and website running in real time</li>
+<li>Need to be able to code without having to click on the application</li>
+<li>Have a fast, responsive reporting system for tests on each branch</li>
+<li>Only tests that are allowed to fail are the very last ones</li>
+<li>Procedure to fix bugs:<ul>
+<li>Write tests to replicate the problem <em>immediately</em></li>
+<li>Analyse the problem and propose a fix</li>
+<li>A fix would break that test!</li>
+<li>That becomes a regression test</li>
+<li>Results in a huge amount of code coverage</li>
+</ul>
+</li>
+<li>High coverage means that unit tests actually become your documentation</li>
+<li>New codebase should always start with 100% coverage and a visualisation of what is going on</li>
+<li>Low code coverage and lack of tests on edge cases imply security issues - Security does not happen by magic</li>
+<li>When we build our services, we need to be able to spin up several dependent services at a time - there need to be tests to probe these dependent clusters</li>
+<li>Idea is that in order to talk about security, we need the infrastructure to build on it first</li>
+</ul>
+<h3 id="tests-">Tests:</h3>
+<ul>
+<li>A test = anything that can be run in a unit test framework</li>
+<li>Good test practice = test that replicates vulnerabilities in the real world, then propagated to web app layer etc</li>
+<li>A test represents a problem - don't write it without thinking about fixing that stuff</li>
+<li>3 different buckets:<ul>
+<li><code>Bucket 1</code>: Vulnerabilities to fix - stuff that the business are not happy to go live with</li>
+<li><code>Bucket 2</code>: Vulnerabilities by design (a feature) - "accepted vulnerabilities"/"accepted realities" - for example: encrypted password getting sent to web client that the user needs for another function (vulnerability but needed for functionality) or somehow all files on the web host can be exposed - <em>do they contain any secrets?</em></li>
+<li><code>Bucket 3</code>: Regression tests - comes from the above 2 buckets. If this breaks, a functionality has changed.</li>
+</ul>
+</li>
+<li>TODO: Each sprint should chop down 10% of the first 2 buckets or there is a sprint dedicated to them.</li>
+<li>The sooner you build SSL, the sooner you care about it, ie. setting dat shit up on <strong>local</strong></li>
+<li>It is always good to have a big pile of security issues! A large volume is a good bargaining chip on the table, especially when talking security with big corporates</li>
+<li><p>An example use case:</p>
+<ul>
+<li><p>First we have a small <code>Http_Client</code>:</p>
+<pre><code class="lang-coffeescript">require 'fluentnode'
+cheerio = require 'cheerio'
+class Http_Client
+  constructor: (options) -&gt;
+      @.options = options || {}
+      @.url = @.options.url || 'http://google.com'
+  GET: (virtual_path, callback) =&gt;
+      fullUrl = @.url + virtual_path
+      fullUrl.GET (html) -&gt;
+      $ = cheerio.load(html)
+      callback($)</code></pre>
+</li>
+<li><p>Then we have a test under <code>Bucket 1</code>, say <code>test/security/to-fix/security-suite.coffee</code>:</p>
+<pre><code class="lang-coffeescript">require 'fluentnode'
+Http_Facade = require '../../../client/Http_Client'
+describe 'Issue #100 webapps are not using auth with the werbservice', () -&gt;
+it 'Should fail with a 401', (done) -&gt;
+  options = { 'url': 'http://localhost' }
+  using new Http_Client(options), () -&gt;
+    @GET '',($) -&gt;
+      # The request actually succeeds here
+      $('title:first-child').html().assert_Is('Title')
+      done()</code></pre>
+</li>
+<li><p>What this means is that as long as the vulnerability is still alive, the test would still pass</p>
+</li>
+<li>Each use case/incident/vulnerability should have its own issue and test</li>
+</ul>
+</li>
+</ul>
+<h3 id="security-implications-">Security Implications:</h3>
+<ul>
+<li>We don't really know what the security implications are until we get <em>properly hit</em> (read: Sony)</li>
+<li>Worst-case scenario: System exploited in a non-deterministic way</li>
+<li>Identify key points in the system - ask yourself if a system goes down or is exploited, would it brong the company down? How would you cope with it?</li>
+<li>Massive issue: poor cross-team collab - Knowledge doesn't scale and security vulnerabilities lose visibility</li>
+<li><strong>Most security issues start appearing when people trying to make shit work</strong> - large projects should be retrofitted. Previous tests should work for new system</li>
+<li>It is very hard to hire somebody that understands security and can code - it is easier to take a developer and turn him/her into a security specialist in the team</li>
+<li>Culture in hacking each other should be <strong>celebrated</strong></li>
+<li>Languages with lack of type safety actually encourages more tests and checks</li>
+<li>Mocking = bad</li>
+<li>Never say "No" because as it propagates upwards, it means "there is no vulnerabilities", but "I don't know" or "I don't have proof for that" mean that there is no false sense of security</li>
+<li>Managers often do not give a shit because that is not what they are rewarded for (for their current position, <em>and also for what they used to work before becoming a manager</em>)</li>
+</ul>
+<h3 id="apis-">APIs:</h3>
+<ul>
+<li>Mocking APIs to work with = super bad (to do with maintenance)</li>
+<li>People who maintain APIs should also know how and what the client is using their stuff for.</li>
+<li>Should always visualise the components, like a metalanguage to visualise code dependencies - Because the growing level of complexity will make it harder and harder to scale and investigate bugs/attacks (good use of <code>neo4j</code>?)</li>
+</ul>
+<h2 id="ii-the-threat-model-">II. The Threat Model:</h2>
+<p>General idea is to analyse system dependencies and data flow to identify security risks and potential attacks/data exposure</p>
+<p>Sometimes the best model is not having one - either too insignificant or not enough assets(?). In some cases the data harvested is worthless - does the attacker gain anything from that?</p>
+<p>Security can also come from building an app that eliminates the threat by not using the technologies involved in the first place (see <code>III. Cross-site scripting</code> below)</p>
+<p>Question: <em>"Is it my job to secure my assets or should I push it to the consumers?"</em></p>
+<p>Sometimes it is better to put monitoring on it - a trap that only a bug or an attacker can trigger (like an invisible link on the website - the only people who would hit it are crawlers)</p>
+<p>Security should be done from ground up, but not always visible or required so often ignored!</p>
+<h2 id="iii-cross-site-scripting-">III. Cross-site scripting:</h2>
+<p>Javascript is powerful and can control everything that is contained in its domain. The only things that limit XSS:</p>
+<ul>
+<li>Different domains</li>
+<li>Different ports</li>
+<li>Different browser</li>
+</ul>
+<p>XSS is one of the top issues around here because it can hit both external and internal networks. Once it is persistent, it propagates to anywhere the database is used</p>
+<p><strong>HTML should be banned from the surface of Earth (lol)</strong></p>
+<p><strong>Secure Coding:</strong> building an application that allows people to develop and experiment with business requirements without worrying about security vulnerbilities. What Dinis did for <a href="https://github.com/TeamMentor">TeamMentor</a> is:</p>
+<ul>
+<li><strong>No Javascript anywhere on the page</strong> - this cripples the whole idea of scripts altogether</li>
+<li>All HTMLs are generated entirely from jadejs and Markdown - so that cripples the only other attack vector left</li>
+<li>They even make their whole codebase open (this guy is insane + awesome at the same time it confuses me)</li>
+<li>Now if there are any vulnerabilities, it must have come from jade - which is fine because it makes crisis management a lot easier</li>
+</ul>
+<p><strong>No Controller</strong>: The right way to deal really fix XSS is to take the controller out of the equation. The argument is that even if we fixed the controller, the view can still be reused elsewhere to inject scripts.</p>
+<p><strong>Headers:</strong> HSTS and CSP headers.</p>
+<ul>
+<li>CSP tells browsers to prevent in-line javascript to load or run</li>
+<li>CSP has a config to build a hook that reports back to developers when a client is hit (which is pretty awesome)</li>
+</ul>
+<h2 id="iv-course-contents-">IV. Course contents:</h2>
+<p><em>I have taken out the Ocado internal repos that we created to list Ocado security issues and write tests to demo them</em></p>
+<ul>
+<li><a href="http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html">http://blog.diniscruz.com/2013/12/xstream-remote-code-execution-exploit.html</a></li>
+<li><a href="http://blog.diniscruz.com/2013/08/using-xmldecoder-to-execute-server-side.html">http://blog.diniscruz.com/2013/08/using-xmldecoder-to-execute-server-side.html</a></li>
+<li><a href="https://www.wifipineapple.com/">https://www.wifipineapple.com/</a></li>
+<li><a href="https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf">https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf</a></li>
+</ul>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <nav class="pagination"><a href="/blog/2019/2/16/building-a-tech-startup-with-duct-tapes-and-bare-hands/">Prev</a> / <a href="/blog/2019/2/16/the-most-important-thing-i-learnt-in-2014/">Next</a></nav>
+        </div>
+          <aside id="sidebarWrapper">
+            <div id="sidebar">
+              <div class="sqs-layout sqs-grid-1 columns-1" id="sidebarBlocks">
+                <div class="row sqs-row"><div class="col sqs-col-1 span-1">
+                  <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+                    <div class="sqs-html-content">
+                      <h1>Son’s Blog</h1>
+                      <p>I write about life, code and photography</p>
+                    </div>
+                  </div></div>
+                </div></div>
+              </div>
+            </div>
+          </aside>
+      </section>
+    </div>
+
+  </div>
+</div>
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

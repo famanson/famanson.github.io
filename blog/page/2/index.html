@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — page 2 — Son &quot;Sean&quot; Pham</title>
+<meta name="description" content="I write about life, code and photography">
+<meta property="og:site_name" content="Son &quot;Sean&quot; Pham">
+<meta property="og:title" content="Blog — page 2 — Son &quot;Sean&quot; Pham">
+<meta property="og:description" content="I write about life, code and photography">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://famanson.github.io/blog/page/2/">
+<link rel="icon" href="/assets/img/1521462679211-NMC83JK2JTYQOW76N5PR.jpg">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-thumbnails thumbnail-aspect-ratio-auto gallery-controls-simple collection-type-blog collection-blog view-list">
+<div id="canvasWrapper">
+  <div id="canvas">
+
+    <div id="mobileNav"><div class="wrapper">
+    <nav id="mobilePrimaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="mobileSecondaryNav" class="main-nav mobile-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class="active-link"><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+    </div></div>
+
+    <div id="headerWrapper">
+      <header id="header">
+        <div id="topNavMobile">
+          <nav id="mobileMenuLink" class="main-nav"><ul><li><a href="#">Menu</a></li></ul></nav>
+        </div>
+        <div id="logo">
+          <h1 class="logo site-title"><a href="/">Son &quot;Sean&quot; Pham</a></h1>
+          <div class="logo-subtitle">The way home is long.</div>
+        </div>
+        <div id="topNav">
+    <nav id="mainNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/">Commute</a></li>
+      <li class=""><a href="/escalators/">Escalators</a></li>
+      <li class=""><a href="/trains/">Trains</a></li>
+      <li class=""><a href="/vietnam/">Vietnam</a></li>
+      <li class=""><a href="/scrapbook/">Scrapbook</a></li>
+      </ul>
+    </nav>
+    <nav id="secondaryNavigation" class="main-nav desktop-nav">
+      <ul>
+      <li class=""><a href="/other-works/">work</a></li>
+      <li class="active-link"><a href="/blog/">blog</a></li>
+      <li class=""><a href="/johannes/">johannes</a></li>
+      </ul>
+    </nav>
+        </div>
+      </header>
+    </div>
+
+    <div id="pageWrapper" role="main">
+      <section id="page">
+        <div class="main-content">
+          <article class="hentry post-type-text article-index-1">
+            <header>
+              <h1 class="entry-title"><a href="/blog/2019/2/16/all-our-base-are-belong-to-google-with-a-few-gotchas/">All our base are belong to Google (with a few gotchas)</a></h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/all-our-base-are-belong-to-google-with-a-few-gotchas/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681f07eb39312979ca6d1d"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-62d58674923e642203c7"><div class="sqs-block-content"><p><em>Original posted date: 12 October 2015</em></p>
+<p><img alt="Workday" loading="lazy" src="https://farm6.staticflickr.com/5776/20945848996_9ba2cdf62c_k_d.jpg"/></p>
+<p>The Esplorio team has moved into the same town resulting in me sharing a flat with Essa, and we took our servers along with us (I kid, I kid)</p>
+<p>A while back we managed to get into the Google Launch programme, which includes a $100k voucher of Google Compute Engine (GCE) credits. The idea is that Google will assist these new exciting startups to scale with many different resources they have at their command, and beefy servers are just one of their specialties. There are a few technical gotchas I will mention at the end so if you want to skip the BS, go all the way down to <a href="#gotchas">The gotchas</a></p>
+<h2 id="the-move">The move</h2>
+<p>These credits sat around for quite some time because our whole team (3+1) were dead focused on getting the iOS app out until about 3 weeks ago when we asked our friend <a href="http://ghickman.co.uk">George Hickman</a> to join Esplorio once more to help us with this huge switch involving a lot of different moving parts:</p>
+<ul>
+<li>API servers serving the webapp and iOS app</li>
+<li>Web frontend server</li>
+<li>A single-node 8GB database box we need to convert to a proper distributed cluster as it was designed to run (Couchbase minimum requirements state 16GB of RAM for <em>each</em> node in the cluster)</li>
+<li>A myriad of other servers to process geodata, images and queued tasks</li>
+</ul>
+<p>By the end of the move, with George's tremendous help, we rewrote all of our deployment scripts using the awesome <a href="https://libcloud.apache.org">Apache Libcloud</a>. Spinning up a whole database cluster only takes one single <code>deploy.db_cluster:node_count=100</code> line in the terminal. After all the scripts were rewritten, it took me another couple of days to complete the switch, tighten our firewalls, and scrub all the old servers. As careful as I was, some parts of the system still went down for about half an hour because of a DNS change.</p>
+<p>We now even have a staging database cluster, which makes us feel a bit more like a proper software company, and plenty of firepower to prep for growth <em>:fingers crossed:</em></p>
+<p>It was a great experience. After months and months of writing way too much Javascript and Swift, I've eventually got my hands around some much needed DevOps stuff. <em>It also serves as a reminder for myself: Esplorio is totally not a simple system to run!</em></p>
+<h2 id="-a-data-preserve-html-node-true-name-gotchas-a-the-gotchas"><a name="gotchas"></a>The gotchas</h2>
+<p>However, we had several problems that we encountered during our move:</p>
+<h3 id="1-unusual-traffic-from-china">1. Unusual traffic from China</h3>
+<p>When we first set up some test GCE boxes, we noticed some suspicious traffic hitting our Django servers. Since Django has the <code>ALLOWED_HOSTS</code> check, fortunately it filters out various invalid hosts from hitting most of our endpoints, and on top of that it sends us alerts of these repeated spoofing attempts to hit our servers like this:</p>
+<pre><code>ERROR: Invalid HTTP_HOST header: 'azzvxgoagent5.appspot.com'.You may need to add u'azzvxgoagent5.appspot.com' to ALLOWED_HOSTS
+No stack trace available
+Request repr() unavailable.</code></pre><p><em>(The HOST header may vary: <code>azzvxgoagent5.appspot.com</code>, <code>azzvxgoagent3.appspot.com</code>, <code>azzvxgoagent1.appspot.com</code>, <code>www.google.com.hk</code>)</em></p>
+<p>After some investigation, it turns out all of these requests came from a program called <code>GoAgent</code>, which snoops around Google App Engine (GAE) servers and use them as a free resource to create a proxy service. As you would have guessed, it is apparently used by many Chinese to bypass the Great Firewall. Our Compute Engine boxes must have fallen in the same IP range that GAE boxes use, and we've had thousands of these requests coming our way.</p>
+<p>We decided to filter out these requests before it reaches our Django instances, returning a <code>HTTP 444</code> (bad request error, without any response) right when they hit our HTTP server.</p>
+<h3 id="2-funky-network-setup-by-google">2. Funky network setup by Google</h3>
+<p>To bring our database over to the new infrastructure without any downtime, we used a technique in Couchbase called XDCR (Cross-DataCenter Replication). The process is to first build the new cluster, and then set up an automatic unidirectional copy of the data from the old cluster into the new one where every single document in the old cluster will be sent over as part of the copy (each copy request is thus called an XDCR op). Once all the data is in place, one can simply flip the switch for the application to use the new cluster, and all the precious data will be there in the new cluster, ready to use. When all of the left-over XDCR ops finish, we can make a backup of the old server and then archive it.</p>
+<p>In order for this to happen successfully, all nodes within the 2 clusters need to be able to talk to each other. We first set the new cluster up so that they can all talk to each other using Google's internal IP addresses, leaving only one box exposed to the old cluster, because we thought if we point the XDCR target to this "leader" box, it'd be enough. XDCR failed, of course, because Couchbase clusters treat each node equally and so all of these <em>individual</em> nodes need to be able to talk to each other. I did some further digging into the GCE network structure, and found that Google have done some funky setup where the IP address of <code>eth0</code> is the internal one, and the external address is apparently generated and configured elsewhere. The idea is that all the nodes are connected to the Internet not directly but via a different layer, and as a result external IP addresses can be changed either at creation time or even on the fly. It's quite cool.</p>
+<p>I predict our database cluster would perform even better if we use an all-internal setup, however it is a task for another day.</p>
+<h3 id="3-quotas">3. Quotas</h3>
+<p>The last gotcha we hit during the migration was the quotas. I assume this is enforced by Google to prevent abuse of their system. Basically, our whole setup required a total of a few dozen CPUs and a number of terabytes of SSD to run so we had to ask for quota raises twice. This was, thankfully, not much of a big trouble since we are a totally legit startup (yay!) and Google's support was very quick and receptive about it.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I normally consider myself a (somewhat) full-stack developer, but much of the fun I've had still comes from back-end and DevOps. Building these new servers was a bit like assembling many parts of a big puzzle, and the end result was very satisfying. Now on to a tonne of other stuff waiting for me to complete while I <a href="http://xkcd.com/303/">procrastinate by writing this blog entry</a>...</p>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <div class="post-divider"></div>
+          <article class="hentry post-type-text article-index-2">
+            <header>
+              <h1 class="entry-title"><a href="/blog/2019/2/16/san-francisco-stories-5/">San Francisco stories #5</a></h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/san-francisco-stories-5/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681ee5ec212d754522d758"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-482df4341749e86f7e6c"><div class="sqs-block-content"><p><em>Original posted date: 10 October 2015</em></p>
+<h2 id="not-your-kind-of-people">Not your kind of people</h2>
+<p><img alt="Supermoon observers" loading="lazy" src="https://farm1.staticflickr.com/680/21857394621_1456882ba0_k_d.jpg"/></p>
+<p><em>POV of an outsider</em></p>
+<p>On one hand, I got to meet exceptional individuals on my trip to San Francisco and the Bay Area. These people are the ones in the driving who push the limits of technology, constantly on the forefront of innovation, trying to have a shot at the impossible, and keeping the wealth flowing in. No exaggeration: they left me in awe of their intelligence and talents. Oh yes, there are way way more talents to tap into outside of Silicon Valley - but these superhumans are a totally different breed, seriously...</p>
+<p>On the other hand, there are homeless folks roaming almost every street we walked/drove by, and many of them are mentally ill. One night, when I was waiting for the BART in SF centre to get to our place in Oakland, an old man came around, kept saying a lot of gibberish to everybody nearby - amongst which I made out the part where he said he was a vet in 'Nam (funnily enough...). He then proceeded to sing a song that I could not really understand either, danced along with it in a deranged way, spoke some more gibberish and walked away. I had a glance into his eyes and found them... well, soulless. It would have made a great photograph, but it was just all really sad so I hesitated and decided not to take the shot. Ever since, I have been reading more and more about the homeless and mental health problems of San Francisco - fascinating stuff.</p>
+<p>All of it was just like a dream - SF is now 8 timezones away. A jet lag is like leaving your heart and soul somewhere else. It is time to readjust.</p>
+<p><em>From High Wycombe, England</em></p>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <div class="post-divider"></div>
+          <article class="hentry post-type-text article-index-3">
+            <header>
+              <h1 class="entry-title"><a href="/blog/2019/2/16/san-francisco-stories-4/">San Francisco stories #4</a></h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/san-francisco-stories-4/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681ebd085229f287637e62"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-23089e26370034b21f57"><div class="sqs-block-content"><p><em>Original posted date: 22 September 2015</em></p>
+<p><img alt="winery" loading="lazy" src="https://farm1.staticflickr.com/765/21645388235_6df929b167_z_d.jpg"/></p>
+<h2 id="what-to-do-in-san-francisco-">What to do in San Francisco:</h2>
+<p>After TechCrunch Disrupt Day 2, go to a random drink where you talk about travel startups, hotel pricing algorithm, your dream Arduino builds, chatting up with girls about your tech stack.</p>
+<p>I can't imagine doing the last bit in many other places I've been to without getting weird look, and people slowly walking away from this nutty Asian guy.</p>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <div class="post-divider"></div>
+          <article class="hentry post-type-text article-index-4">
+            <header>
+              <h1 class="entry-title"><a href="/blog/2019/2/16/its-time-to-just-do-it/">It&#x27;s time to just do it</a></h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/its-time-to-just-do-it/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681e9f104c7b6738c2f920"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-71e8abb9810ef6a5820d"><div class="sqs-block-content"><p><em>Original posted date: 15 September 2015</em></p>
+<h2 id="next-destination-san-francisco">Next destination: San Francisco</h2>
+<p>3 months ago, the reaction would be "Yeah, let's go to Disrupt SF!", now it has changed to "Holy shit, it's next week..."</p>
+<p>We've now got a solid platform, with an upcoming iOS app that we have always wanted to build reaching launch date, and (positive - woot!) feedback flooding in from beta users and early adopters. In the past 4 months, I have written a lot of thousands of lines of code in at least 5 different programming languages, and currently on an over month-long GitHub streak with 70 pull requests within the last 7 days alone. Recruiters who spams me with LinkedIn messages about "new exciting challenges", please take note: if something can pique my interest, it needs to be that Esplorio-level challenging and addicting.</p>
+<p><img alt="just-do-it" loading="lazy" src="http://i.imgur.com/JAZkaBP.png"/></p>
+<p>There is still a crazy amount of work to do. The more we get finished, the more new stuff there is. However, it is safe to say that I am having the time of my life right now, and the best is yet to come.</p>
+<p>Let's hope all the long hours and all those "Okay, I'll stay back to finish this, maybe one fewer day/night out/game..." moments will eventually pay off. See you again soon, San Francisco.</p>
+<p><em>If you are going to attend TechCrunch Disrupt SF 2015, you can find us showing off all the awesome things we've built in the Startup Alley on the 21st Sep. Otherwise, I'll stay in town with my team until the 30th if you fancy a catchup</em></p>
+<p>PS: Fun fact. While I'm writing these lines, Esplorio servers are under attack by Chinese hackers</p>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <div class="post-divider"></div>
+          <article class="hentry post-type-text article-index-5">
+            <header>
+              <h1 class="entry-title"><a href="/blog/2019/2/16/cnn-conference-2015-hi-tho-du-hc-chuyn-ngoi-ng-2015/">CNN Conference 2015 - Hội thảo du học Chuyên Ngoại Ngữ 2015</a></h1>
+              <div class="entry-info">
+                <span class="published"><a href="/blog/2019/2/16/cnn-conference-2015-hi-tho-du-hc-chuyn-ngoi-ng-2015/" title="Permalink" class="permalink"><time datetime="2019-02-16">February 16, 2019</time></a></span>
+              </div>
+            </header>
+            <div class="body entry-content">
+<div class="sqs-layout sqs-grid-12 columns-12" id="item-5c681e6fb208fc2898854c61"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" id="block-1739786f0015b0c71448"><div class="sqs-block-content"><p><em>Original posted date: 31 July 2015</em></p>
+<h2 id="vietnamese-post-cnn-conference-c-g-hot-">Vietnamese post - CNN Conference có gì hot?</h2>
+<p>Series các câu hỏi nổi bật nhận được trong những ngày qua về CNN Conference</p>
+<h3 id="-ch-a-ch-n-">"Chưa chán à?"</h3>
+<p><em>Chưa.</em></p>
+<h3 id="-l-m-g-y-">"Làm gì ở đấy?"</h3>
+<p><em>Đến xem chơi.</em></p>
+<h3 id="-cnn-conference-l-g-">"CNN Conference là gì?"</h3>
+<p><em>Hội thảo du học hàng năm của trường Chuyên Ngoại Ngữ</em></p>
+<h3 id="-h-i-th-o-c-a-chuy-n-ng-c-g-hay-h-n-c-c-h-i-th-o-kh-c-">"Hội thảo của Chuyên Ngữ có gì hay hơn các hội thảo khác?"</h3>
+<p><em>Các hội thảo khác, dù nhiều tiếp tế súng ống đạn dược hơn, nhưng thông thường chỉ có thể tập trung sâu vào một mảng du học lớn. CNN Conference được chạy bởi CNNers, và thiết kế cho CNNers. Mà đã là dân Chuyên Ngữ thì có đặc điểm là đi đến nước nào cũng có.</em></p>
+<p><em>Có về lần này mới biết trend của các em bây giờ là không chỉ apply nhiều trường trong 1 nước như kiểu ngày xưa mình làm, mà còn trải applications ra các nước khác nhau. Và hiếm có cái hội thảo nào bao được hơn 10 quốc gia trong 1 ngày.</em></p>
+<h3 id="-h-c-sinh-tr-ng-ngo-i-c-n-c-kh-ng-">"Học sinh trường ngoài có đến được không?"</h3>
+<p><em>Có chứ, đến chơi nhé?</em></p>
+<h3 id="-ph-huynh-th-sao-">"Phụ huynh thì sao?"</h3>
+<p><em>Đương nhiên là ok rồi.</em></p>
+<h3 id="mu-n-i-ph-i-l-m-g-">Muốn đi phải làm gì?</h3>
+<p><em>Đăng ký ở <a href="http://tiny.cc/globalcc2015">đây</a> rồi 7h45 sáng có mặt</em></p>
+<p><em>RSVP ở trên <a href="https://www.facebook.com/events/927586957264334/">facebook</a> cho vui</em></p>
+<h3 id="-t-m-t-t-l-i-trong-ng-y-c-g-">"Tóm tắt lại trong ngày có gì?"</h3>
+<p><em>Sáng có panel discussion hay ho của đại diện 1 số quốc gia, chiều đến có đủ các booth của 10 nước, tha hồ nói chuyện với các bạn/anh chị du hí và du học sinh cool cool.</em></p>
+<p><strong>Sau đây là poster hoành tráng nhưng Facebook resize lại còn 1 mẩu bé như con kiến, xin được trả lại công lý cho nó:</strong></p>
+<p><img alt="poster-2015" loading="lazy" src="http://i.imgur.com/W2B6xYX.png"/></p>
+<p>... and here goes bonus round 1:</p>
+<p><img alt="awesome1" loading="lazy" src="http://i.imgur.com/FelZwL6.png"/></p>
+<p>... and bonus round 2:</p>
+<p><img alt="awesome2" loading="lazy" src="http://i.imgur.com/SWsxYXd.png"/></p>
+<p><em>#muchhappi #socri</em></p>
+<p>Spread your wing and fly.</p>
+</div></div></div></div></div>
+            </div>
+          </article>
+          <nav class="pagination"><a href="/blog/">Prev</a> / <a href="/blog/page/3/">Next</a></nav>
+        </div>
+          <aside id="sidebarWrapper">
+            <div id="sidebar">
+              <div class="sqs-layout sqs-grid-1 columns-1" id="sidebarBlocks">
+                <div class="row sqs-row"><div class="col sqs-col-1 span-1">
+                  <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+                    <div class="sqs-html-content">
+                      <h1>Son’s Blog</h1>
+                      <p>I write about life, code and photography</p>
+                    </div>
+                  </div></div>
+                </div></div>
+              </div>
+            </div>
+          </aside>
+      </section>
+    </div>
+
+  </div>
+</div>
+<script src="/assets/js/site.js"></script>
+</body>
+</html>
