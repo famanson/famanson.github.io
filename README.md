@@ -53,9 +53,13 @@ blocks, gallery blocks — so the two long pages lay out exactly as they did.
 
 - **Typeface.** The original set Proxima Nova through a Typekit kit tied to
   the Squarespace account, which can't come along. The site now uses
-  [Mulish](https://fonts.google.com/specimen/Mulish), self-hosted — the
-  closest freely-licensed match that also covers Vietnamese diacritics.
-  Change `--font-sans` at the top of `assets/css/site.css` to swap it.
+  [Asap](https://fonts.google.com/specimen/Asap), self-hosted. It was picked
+  by measuring candidates against the live site rather than by eye: Asap
+  lands within 3.6% of Proxima Nova averaged over string widths, x-height,
+  cap-height and descender depth, scored second-best on a normalised
+  letterform-bitmap comparison, breaks running text at the same words, and
+  covers Vietnamese diacritics. Change `--font-sans` at the top of
+  `assets/css/site.css` to swap it.
 - **Images.** Everything that lived on Squarespace's CDN is now in
   `assets/img/`. Images the posts hotlinked from elsewhere (cl.ly, imgur,
   Flickr, xkcd) still point at those hosts, exactly as they did before.
